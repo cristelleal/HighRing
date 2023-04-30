@@ -85,11 +85,12 @@ TABLE OF CONTENT
 
   /* FONT SIZE */
 
-  --ui-typography-h1: 1.9375rem;
-  --ui-typography-h2: 1.5625rem;
-  --ui-typography-h3: 1.25rem;
-  --ui-typography-p : 1rem;
-  --ui-typography-s : .8125rem;
+  --ui-typography-h1  : 1.9375rem;
+  --ui-typography-h2  : 1.5625rem;
+  --ui-typography-h3  : 1.25rem;
+  --ui-typography-p   : 1rem;
+  --ui-typography-s   : .8125rem;
+  --ui-typography-icon: 1.75rem;
 
   /* LEADING */
 
@@ -580,9 +581,8 @@ div label[for=ui-component-toggle__yearly] {
 }
 
 .ui-section-testimonial--avatar {
-  border-radius: var(--ui-radius-avatar);
-  height: 5rem;
-  width: 5rem;
+  height: 3rem;
+  width: 3rem;
 }
 
 .ui-section-testimonial--quote {
@@ -616,13 +616,30 @@ div label[for=ui-component-toggle__yearly] {
   padding-top: 1.25rem;
 }
 
+.ui-section-footer a {
+  text-decoration: none;
+  cursor: pointer;
+}
+
+.ui-section-footer img {
+  width: 4rem;
+}
+
 .ui-section-footer__layout {
   column-gap: var(--ui-layout-gutter);
 }
 
+.ui-section-footer__layout {
+  flex-direction: column;
+}
+
 .ui-section-footer--copyright {
-  margin-bottom: 0;
-  margin-right: auto;
+  line-height: 2;
+  text-align: center;
+}
+
+.ui-section-footer--icon {
+  font-size: var(--ui-typography-icon);
 }
 
 /*--------------------------------------------------------------
@@ -799,7 +816,6 @@ div label[for=ui-component-toggle__yearly] {
     width: auto;
   }
 
-
   /*------------------------------------------------------------
   |
   | FEATURE
@@ -817,17 +833,6 @@ div label[for=ui-component-toggle__yearly] {
   ------------------------------------------------------------*/
 
   .ui-component-card--brand { padding: 2rem 2rem 2.25rem; }
-
-  /*------------------------------------------------------------
-  |
-  | FOOTER
-  |
-  ------------------------------------------------------------*/
-
-  .ui-section-footer {
-    padding-bottom: 2rem;
-    padding-top: 2rem;
-  }
   
 }
 
@@ -1063,6 +1068,10 @@ div label[for=ui-component-toggle__yearly] {
   .ui-section-footer {
     padding-bottom: 3rem;
     padding-top: 3rem;
+  }
+
+  .ui-section-footer__layout {
+    flex-direction: row;
   }
 
 }
