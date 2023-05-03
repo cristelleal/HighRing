@@ -6,11 +6,11 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta name="description" content="HighRing est une société de recrutement spécialisée dans la recherche de profils cadres et d'opportunités à responsabilités. 
     Localisée à Paris et à Bordeaux, l'entreprise de recrutement HighRing met l'humain au centre de ses actions.">
-    <meta name="author" content="C.A. pour HighRing">
+    <meta name="author" content="Cristelle Almodar">
     <!-- FONT -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Open+Sans:wght@300;400;500;600&display=swap" rel="stylesheet">
     <!-- PERFORMANCE -->
     <link rel="preload" as="style" href="style.css">
     <link rel="stylesheet" href="style.css">
@@ -18,7 +18,8 @@
     <title>HighRing - Société de recrutement - Paris/Bordeaux</title>
     <!-- LINK FOR CDN (SCROLL EFFECT/ICONS) -->
     <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css">
-    <link rel='stylesheet' href='https://cdn-uicons.flaticon.com/uicons-brands/css/uicons-brands.css'>
+    <link rel="stylesheet" href="https://cdn-uicons.flaticon.com/uicons-brands/css/uicons-brands.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
   </head>
   <body>
     <header class="ui-section-header">
@@ -26,24 +27,65 @@
         <div class="ui-section-header__layout ui-layout-flex">
           <!-- LOGO -->
           <a href="#accueil" class="ui-section-header--logo">
-            <img src="img/Logo-HighRing.png" alt="Logo HighRing Bleu et doré représentant un H et un R entourés d'un anneau">
+            <img src="img/Logo-HighRing.png" alt="Logo HighRing Bleu et doré représentant un H et un R entourés d'un anneau" aria-label="visiter la page d'accueil">
           </a>
           <!-- HAMBURGER -->
-          <input type="checkbox" id="ui-section-header--menu-id">
-          <label for="ui-section-header--menu-id" class="ui-section-header--menu-icon"></label>
+          <nav class="navbar dark-mode" role="navigation">
+            <ul class="navbar__links">
+              <li class="navbar__link first"><a href="#">Candidats</a></li>
+              <ul class="hamburger-sublist">
+                <li class="hamburger-items-sublist"><a href="emplois.html">Offres d'emplois</a></li>
+                <li class="hamburger-items-sublist"><a href="candidats.html">Proposer ma candidature</a></li>
+            </ul>
+              <li class="navbar__link second"><a href="#section2">Entreprises</a></li>
+              <ul class="hamburger-sublist">
+                <li class="hamburger-items-sublist"><a href="profils.html">Profils disponibles</a></li>
+                <li class="hamburger-items-sublist"><a href="entreprises.html">Travailler avec HighRing</a></li>
+              </ul>
+              <li class="navbar__link third"><a href="#">Nos marques</a></li>
+              <ul class="hambuerger-sublist">
+                <li class="hamburger-items-sublist">Construction</li>
+                <li class="hamburger-items-sublist">Sales</li>
+                <li class="hamburger-items-sublist">Consulting</li>
+              </ul>
+              <li class="navbar__link four"><a href="#">Notre histoire</a></li>
+              <li class="navbar__link fifth"><a href="#">Contact</a></li>
+            </ul>   
+            <button class="burger">
+              <span class="bar"></span>  
+            </button>   
+          </nav>
           <!-- MENU -->
           <nav class="ui-section-header--nav ui-layout-flex">
-            <a href="#" class="ui-section-header--nav-link">Espace candidat</a>
-            <a href="#" class="ui-section-header--nav-link">Espace client</a>
-            <a href="#" class="ui-section-header--nav-link">Nos marques</a>
-            <a href="#" class="ui-section-header--nav-link">Notre histoire</a>
-            <a href="#" class="ui-section-header--nav-link">Contact</a>
+            <ul class="list-items">
+              <li class="items">Candidats <span>⏷</span> 
+                  <ul class="sublist">
+                      <li class="items-sublist"><a href="emplois.html">Offres d'emplois</a></li>
+                      <li class="items-sublist"><a href="candidats.html">Proposer ma candidature</a></li>
+                  </ul>
+              </li>
+              <li class="items">Entreprises <span>⏷</span>
+                  <ul class="sublist">
+                    <li class="items-sublist"><a href="profils.html">Profils disponibles</a></li>
+                    <li class="items-sublist"><a href="entreprises.html">Travailler avec HighRing</a></li>
+                  </ul>
+            </li>
+              <li class="items">Nos marques <span>⏷</span>
+                  <ul class="sublist">
+                    <li class="items-sublist">Construction</li>
+                    <li class="items-sublist">Sales</li>
+                    <li class="items-sublist">Consulting</li>
+                  </ul>
+            </li>
+              <li class="items">Notre histoire</li>
+              <li class="items"><a href="contact.html" class="active">Contact</a>
+          </ul>
           </nav>
         </div>
       </div>
     </header>
     <main>
-      <section class="ui-section-hero">
+      <section class="ui-section-hero" id="accueil">
         <div class="ui-layout-container">
           <div class="ui-section-hero__layout ui-layout-grid ui-layout-grid-2">
             <!-- COPYWRITING -->
@@ -59,7 +101,7 @@
               </p>
               <!-- CTA -->
               <div class="ui-component-cta ui-layout-flex">
-                <a href="#" aria-label="bouton" class="ui-component-button ui-component-button-normal ui-component-button-primary"> En savoir plus </a>
+                <a href="#" aria-label="visiter la page contact" class="ui-component-button ui-component-button-normal ui-component-button-primary"> En savoir plus </a>
                 <p class="ui-text-note"><small>Echangez avec nos équipes</small></p>
               </div>
             </div>
@@ -172,12 +214,15 @@
           <div class="ui-section-testimonial__layout ui-layout-grid ui-layout-grid-2">
             <div class="ui-layout-column-4">
               <svg class="ui-section-testimonial--avatar" viewBox="0 0 21 21" width="21" xmlns="http://www.w3.org/2000/svg"><path d="m8 13.5172414c4.418278 0 8-3.2845583 8-7.0172414 0-3.73268314-3.581722-6.5-8-6.5s-8 3.02593755-8 6.75862069c0 1.45741942.5460328 2.80709561 1.47469581 3.91098161l-.97469581 4.5803977 3.91607376-2.4472652c1.07810761.4571647 2.29544433.7145066 3.58392624.7145066z" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" transform="translate(3 3)"/></svg>       
-              <p class="ui-section-testimonial--quote ui-text-intro">&ldquo;Lorem ipsum dolor sit amet, consec adipiscing elit, sed do eiusmod tempor incididunt labore dolore magna.&rdquo;</p>
-              <p class="ui-section-testimonial--author"><strong>Jane Doe</strong><br><small class="ui-text-note">CEO of Company</small></p>
+              <p class="ui-section-testimonial--quote ui-text-intro">&ldquo; Une qualité de service optimale, un accompagnement sur mesure ainsi qu'un sens de l'écoute sans égal !
+                Je remercie l'équipe pour son travail et la compréhension de mon projet professionnel qui me permet aujourd'hui de faire le métier que j'aime.
+                Foncez, les yeux fermés ! &rdquo;</p>
+              <p class="ui-section-testimonial--author"><strong>Valentin THEBAUD</strong><br><small class="ui-text-note">Candidat</small></p>
             </div>
             <div class="ui-layout-column-4">
-              <svg class="ui-section-testimonial--avatar" viewBox="0 0 21 21" width="21" xmlns="http://www.w3.org/2000/svg"><path d="m8 13.5172414c4.418278 0 8-3.2845583 8-7.0172414 0-3.73268314-3.581722-6.5-8-6.5s-8 3.02593755-8 6.75862069c0 1.45741942.5460328 2.80709561 1.47469581 3.91098161l-.97469581 4.5803977 3.91607376-2.4472652c1.07810761.4571647 2.29544433.7145066 3.58392624.7145066z" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" transform="translate(3 3)"/></svg>              <p class="ui-section-testimonial--quote ui-text-intro">&ldquo;Lorem ipsum dolor sit amet, consec adipiscing elit, sed do eiusmod tempor incididunt labore dolore magna.&rdquo;</p>
-              <p class="ui-section-testimonial--author"><strong>Jane Doe</strong><br><small class="ui-text-note">CEO of Company</small></p>
+              <svg class="ui-section-testimonial--avatar" viewBox="0 0 21 21" width="21" xmlns="http://www.w3.org/2000/svg"><path d="m8 13.5172414c4.418278 0 8-3.2845583 8-7.0172414 0-3.73268314-3.581722-6.5-8-6.5s-8 3.02593755-8 6.75862069c0 1.45741942.5460328 2.80709561 1.47469581 3.91098161l-.97469581 4.5803977 3.91607376-2.4472652c1.07810761.4571647 2.29544433.7145066 3.58392624.7145066z" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" transform="translate(3 3)"/></svg>              
+              <p class="ui-section-testimonial--quote ui-text-intro">&ldquo; L'équipe HighRing allie ambition et empathie envers ses clients, talents et collaborateurs. Suite à une journée immersive au sein de l'entreprise, j'ai été très agréablement surpris par la méthodologie de travail et l'énergie (humaine) qui anime cette entreprise. &rdquo;</p>
+              <p class="ui-section-testimonial--author"><strong>Amine Zeffane</strong><br><small class="ui-text-note">Candidat</small></p>
             </div>
           </div>
         </div>
@@ -185,7 +230,7 @@
       <section class="ui-section-close">
         <div class="ui-layout-container">
           <div class="ui-layout-column-6 ui-layout-column-center">
-            <h2>Pour aller plus loin</h2>
+            <h2>Nous rejoindre</h2>
             <p class="ui-text-intro">Vous souhaitez échanger avec nos équipes ?</p>
             <!-- CTA -->
             <div class="ui-component-cta ui-layout-flex">
@@ -224,13 +269,14 @@
           </p>
           <!-- MENU -->
           <div class="ui-section-footer--icon">
-            <a href="https://www.instagram.com/highringfrance/" target="_blank"><i class="fi fi-brands-instagram"></i></a>
-            <a href="https://www.facebook.com/profile.php?id=100088948220802" target="_blank"><i class="fi fi-brands-facebook"></i></a>
-            <a href="https://www.linkedin.com/company/highring-france/" target="_blank"><i class="fi fi-brands-linkedin"></i></a>
+            <a href="https://www.instagram.com/highringfrance/" target="_blank"><i class="fi fi-brands-instagram" aria-label="visiter la page Instagram d'HighRing"></i></a>
+            <a href="https://www.facebook.com/profile.php?id=100088948220802" target="_blank"><i class="fi fi-brands-facebook" aria-label="visiter la page Facebook d'HighRing"></i></a>
+            <a href="https://www.linkedin.com/company/highring-france/" target="_blank"><i class="fi fi-brands-linkedin" aria-label="visiter la page Linkedin d'HighRing"></i></a>
           </div>
         </div>
       </div>
     </footer>
+    <script src="script.js"></script>
     <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
     <script>
       AOS.init();
