@@ -305,40 +305,6 @@ svg {
 
 /*--------------------------------------------------------------
 |
-| 6.3 TOGGLE
-|
---------------------------------------------------------------*/
-
-/* input[name="toggle"] { display: none; }
-
-.ui-component-toggle {
-  background-color: var(--ui-color-background-tertiary);
-  border-radius: var(--ui-radius-button);
-  color: var(--ui-color-typography-note);
-  font-size: var(--ui-typography-s);
-  font-weight: 700;
-  line-height: 1;
-  margin: var(--ui-gap-brand) auto .5rem;
-  padding: .25rem;
-  width: max-content;
-}
-
-.ui-component-toggle--label {
-  border-radius: var(--ui-radius-button);
-  cursor: pointer;
-  padding: .5rem .625rem;
-}
-
-#ui-component-toggle__monthly:checked ~
-div label[for=ui-component-toggle__monthly],
-#ui-component-toggle__yearly:checked ~
-div label[for=ui-component-toggle__yearly] {
-  background-color: var(--ui-color-background-primary);
-  color: var(--ui-color-typography-body);
-} */
-
-/*--------------------------------------------------------------
-|
 | 6.4 CARD
 |
 --------------------------------------------------------------*/
@@ -571,24 +537,11 @@ div label[for=ui-component-toggle__yearly] {
   display: none; 
   font-size: 1rem;
   font-family: 'Montserrat', 'sans-serif';
-  font-weight: 400;
+  font-weight: 500;
 } 
 
 .list-items {
   display: flex;
-}
-
-.active {
-  padding: 1rem;
-  transition: .1s ease-out;
-  background-color: var(--ui-color-background-secondary);
-  border-radius: 3px;
-  box-shadow:1px 1px 2px 0 rgba(0, 0, 0, 0.144); 
-  color: var(--ui-color-n-500);
-}
-
-.active:hover {
-  color: var(--ui-color-n-1300);
 }
 
 .items {
@@ -605,7 +558,7 @@ div label[for=ui-component-toggle__yearly] {
   text-align: center;
   text-decoration: none;
   list-style-type: none;
-  font-family: 'Open sans','sans-serif';
+  font-family: 'IBM Plex Sans','sans-serif';
   font-weight: 400;
   font-size: var(--ui-color-typography-note);
 }
@@ -646,8 +599,16 @@ div label[for=ui-component-toggle__yearly] {
 
 .items span {
   color: var(--ui-color-n-1300);
+  font-weight: bold;
 }
 
+.items span:hover {
+  color: var(--ui-color-brand);
+}
+
+.active {
+  color: var(--ui-color-brand)
+}
 
 /*--------------------------------------------------------------
 |
@@ -825,6 +786,14 @@ div label[for=ui-component-toggle__yearly] {
 
 .ui-section-footer--icon {
   font-size: var(--ui-typography-icon);
+}
+
+.ui-section-footer--icon a {
+  padding-left: 0.5rem;
+}
+
+.ui-section-footer--icon a:hover {
+  color: var(--ui-color-n-1300);
 }
 
 /*--------------------------------------------------------------
