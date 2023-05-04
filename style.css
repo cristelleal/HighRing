@@ -355,7 +355,11 @@ svg {
 
 .ui-section-header {
   padding-bottom: 1.25rem;
-  padding-top: 1.25rem;;
+  padding-top: 1.25rem;
+  position: sticky;
+  top: 0;
+  background-color: var(--ui-color-background-primary);
+  z-index: 99;
 }
 
 .ui-section-header__layout { justify-content: space-between; }
@@ -363,7 +367,7 @@ svg {
 /* LOGO */
 
 .ui-section-header--logo { 
-  max-width: fit-content;
+  max-width: 75%;
   margin-left: 0;
 }
 
