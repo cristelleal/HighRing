@@ -409,7 +409,10 @@ svg {
   right: -2rem;     
   background: var(--ui-color-background-primary);     
   transform: translateX(110%);
+  -webkit-transform: translateX(110%);
   transition: all .5s ease-in-out;
+  -webkit-transition: all .5s ease-in-out;
+
 }
 
 .show-nav .navbar__links { 
@@ -419,11 +422,14 @@ svg {
 
 .navbar__link {    
   transform: translateX(101%);
+  -webkit-transform: translateX(101%); 
   transition: all .5s ease-in-out;
+  -webkit-transition: all .5s ease-in-out;
 }
   
 .show-nav .navbar__link  {        
-  transform: translateX(0);    
+  transform: translateX(0); 
+  -webkit-transform: translateX(0);   
 }   
 
 .navbar__link > a {
@@ -433,11 +439,13 @@ svg {
   font-weight: 600;
   color:var(--ui-color-n-700);  
   transition: all .4s ease-in-out;
+  -webkit-transition: all .4s ease-in-out;
   background-color: var(--ui-color-background-secondary);
 }
 
 .show-nav .fifth {
   background-color: var(--ui-color-n-1050);
+  border: 2px solid var(--ui-color-background-primary);
 }
 
 .navbar__link > a:hover {
@@ -449,7 +457,7 @@ svg {
   list-style-type: none;
   font-size: 1rem;
   padding-left: 1rem;
-  margin: 10px;
+  margin: 5px 0 0 10px;
   font-weight: 500;
 }
   
@@ -471,6 +479,7 @@ svg {
   border-radius:3px;
   background:var(--ui-color-brand); 
   transition: all .5s ease-in-out;   
+  -webkit-transition: all .5s ease-in-out;
 }
 
 .bar::before, .bar::after {
@@ -482,49 +491,59 @@ svg {
   background:var(--ui-color-brand); 
   border-radius:3px;    
   transition: all .5s ease-in-out;
+  -webkit-transition: all .5s ease-in-out;
 }
 
 .bar::before {
-  transform:translateY(-12px)
+  transform: translateY(-12px);
+  -webkit-transform: translateY(-12px)
 }
   
 .bar::after {
-  transform:translateY(12px)
+  transform:translateY(12px);
+  -webkit-transform: translateY(12px);
 }
 
 .show-nav .bar {
-  width:0;
-  background:transparent;    
+  width: 0;
+  background: transparent;    
 }
   
 .show-nav .bar::before {
-  transform:rotate(45deg);
+  transform: rotate(45deg);
+  -webkit-transform: rotate(45deg);
 }
 
 .show-nav .bar::after {
-    transform:rotate(-45deg);
+  transform: rotate(-45deg);
+  -webkit-transform: rotate(-45deg);
 }
 
 /* TOGGLE - ANIMATIONS */
 
 .show-nav .first {      
   transition: all 1s ease-out;
+  -webkit-transition: all 1s ease-out;
 } 
 
 .show-nav .second {      
   transition: all 1.1s ease-out;
+  -webkit-transition: all 1.1s ease-out;
 } 
   
 .show-nav .third {      
   transition: all 1.2s ease-out;
+  -webkit-transition: all 1.2s ease-out;
 } 
 
 .show-nav .four {      
   transition: all 1.3s ease-out;
+  -webkit-transition: all 1.3s ease-out;
 } 
 
 .show-nav .fifth {      
   transition: all 1.4s ease-out;
+  -webkit-transition: all 1.4s ease-out;
 }
 
 /* MENU */
@@ -535,7 +554,7 @@ svg {
   gap: var(--ui-gap-header);
   padding: 7.375rem var(--ui-layout-container) 5rem;
   display: none; 
-  font-size: 1rem;
+  font-size: 1.05rem;
   font-family: 'Montserrat', 'sans-serif';
   font-weight: 500;
 } 
@@ -558,7 +577,7 @@ svg {
   text-align: center;
   text-decoration: none;
   list-style-type: none;
-  font-family: 'IBM Plex Sans','sans-serif';
+  font-family: 'Montserrat','sans-serif';
   font-weight: 400;
   font-size: var(--ui-color-typography-note);
 }
@@ -604,10 +623,6 @@ svg {
 
 .items span:hover {
   color: var(--ui-color-brand);
-}
-
-.active {
-  color: var(--ui-color-brand)
 }
 
 /*--------------------------------------------------------------
