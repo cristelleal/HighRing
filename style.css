@@ -625,6 +625,10 @@ svg {
   color: var(--ui-color-brand);
 }
 
+.active:hover {
+  color: var(--ui-color-n-1300);
+}
+
 /*--------------------------------------------------------------
 |
 | 7.2 HERO
