@@ -85,7 +85,6 @@ TABLE OF CONTENT
   |
   ------------------------------------------------------------*/
 
-  /* --ui-typography-typeface: "Inter", sans-serif; */
   --ui-typography-typeface: "Montserrat", sans-serif;
 
   /* FONT SIZE */
@@ -523,7 +522,7 @@ svg {
   -webkit-transform: rotate(-45deg);
 }
 
-/* TOGGLE - ANIMATIONS */
+/* Toggle / Animations */
 
 .show-nav .first {      
   transition: all 1s ease-out;
@@ -603,7 +602,6 @@ svg {
 }
 
 .items-sublist :nth-child(1):hover {
-  background-color: var(--ui-color-background-primary);
   transform: translate(1rem);
   color: var(--ui-color-n-1300);
 }

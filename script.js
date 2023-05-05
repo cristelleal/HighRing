@@ -1,3 +1,5 @@
+// Fonctionnement du menu hamburger (mobile device)
+
 function toggleMenu () {  
     const navbar = document.querySelector('.navbar');
     const burger = document.querySelector('.burger');
@@ -14,4 +16,5 @@ function toggleMenu () {
     })
      
   }
-  toggleMenu();
+toggleMenu();
+

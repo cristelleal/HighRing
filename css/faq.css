@@ -1,0 +1,29 @@
+
+
+/*--------------------------------------------------------------
+|
+| 7.7 FAQ
+|
+--------------------------------------------------------------*/
+
+.ui-section-faq--avatar {
+    height: 3rem;
+    width: 3rem;
+}
+
+.ui-section-faq { padding-bottom: 5rem; }
+
+.ui-section-faq__layout {
+    margin: 2.5rem 0 2.5rem 0;
+    row-gap: var(--ui-gap-faq);
+    text-align: left;
+}
+
+.ui-section-faq--question {
+    background-image: url(https://res.cloudinary.com/uisual/image/upload/assets/icons/question.svg);
+    margin-bottom: .5rem;
+}
+
+.ui-section-faq--answer { padding-left: 1.875rem; }
+
+.ui-section-faq--note { text-align: center; }
