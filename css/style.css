@@ -955,7 +955,7 @@ svg {
   |
   ------------------------------------------------------------*/
 
-  .ui-section-customer__layout {
+  /* .ui-section-customer__layout {
     display: flex;
     column-gap: var(--ui-gap-customer);
     flex-direction: row;
@@ -966,7 +966,7 @@ svg {
     margin-right: 0;
     height: 2rem;
     width: auto;
-  }
+  } */
 
   /*------------------------------------------------------------
   |

@@ -1,20 +1,15 @@
-
-
 /*--------------------------------------------------------------
 |
 | 7.7 FAQ
 |
 --------------------------------------------------------------*/
 
-.ui-section-faq--avatar {
-    height: 3rem;
-    width: 3rem;
-}
-
 .ui-section-faq { padding-bottom: 5rem; }
 
+.faq-content-text { margin: 0.5rem; }
+
 .ui-section-faq__layout {
-    margin: 2.5rem 0 2.5rem 0;
+    padding: 5rem 0 5rem 0;
     row-gap: var(--ui-gap-faq);
     text-align: left;
 }
