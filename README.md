@@ -1,4 +1,4 @@
-﻿# HighRing
+﻿# HighRing 
 
 Official website of HighRing - recruitment agency (Paris, Bordeaux) 🏢
 
