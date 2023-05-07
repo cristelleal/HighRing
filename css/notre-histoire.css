@@ -33,7 +33,7 @@
 
 /*--------------------------------------------------------------
 |
-| 7.2 CONTENT
+| STORYTELLING
 |
 --------------------------------------------------------------*/
   
@@ -58,5 +58,5 @@
     width: 5rem;
     height: 5rem;
     margin-top: 1rem;
-    border: 3px dashed var(--ui-color-n-1050);
+    border: 1px solid var(--ui-color-background-primary);
 }
