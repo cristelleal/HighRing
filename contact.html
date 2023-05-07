@@ -20,7 +20,7 @@
     <link rel="stylesheet" href="css/contact.css">
     <!-- TITLE -->
     <title>HighRing - Société de recrutement - Paris/Bordeaux</title>
-    <!-- LINK FOR CDN (SCROLL EFFECT) -->
+    <!-- LINK FOR CDN (SCROLL EFFECT/ICON) -->
     <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css">
     <link rel="stylesheet" href="https://cdn-uicons.flaticon.com/uicons-brands/css/uicons-brands.css">
   </head>
@@ -92,7 +92,7 @@
       <div class="ui-layout-container">
         <div class="ui-section-hero__layout ui-layout-grid ui-layout-grid-2">
         <!-- COPYWRITING -->
-        <div>
+        <div data-aos="fade-down" data-aos-delay="150" data-aos-duration="500" data-aos-mirror="false">
           <h1>Contacter HighRing</h1>
             <p class="ui-text-intro">Prenez contact directement avec l'agence de recrutement HighRing de votre choix ou remplissez le formulaire de contact ci-dessous.</p>
             <p class="ui-text-note"><small>Nous vous recontactons sous 24h</small></p>
@@ -106,7 +106,7 @@
           <section class="ui-section-feature-contact">
             <div class="ui-layout-container">
               <div class="ui-section-feature__layout ui-layout-flex">
-                <div class="ui-component-card ui-component-card--feature">
+                <div class="ui-component-card ui-component-card--feature" data-aos="zoom-in-up" data-aos-delay="100" data-aos-duration="500" data-aos-mirror="false">
                   <img src="img/HighRing-recrutement-Paris-café.jpg" alt="Vue zoomée de l'équipe en train de travailler sur l'ordinateur" loading="lazy">
                   <div class="ui-component-card--feature-content">
                     <h4 class="ui-component-card--feature-title">HighRing Paris</h4>
@@ -119,7 +119,7 @@
                     <a href="mailto:m.tayebi@highring.fr"><ion-icon name="mail-outline" class="ion-icon-contact"></ion-icon></a> 
                   </div>
                 </div>
-            <div class="ui-component-card ui-component-card--feature">
+                <div class="ui-component-card ui-component-card--feature" data-aos="zoom-in-up" data-aos-delay="250" data-aos-duration="500" data-aos-mirror="false">
                   <img src="img/HighRing-recrutement-Bordeaux-sac.jpg" alt="Homme de dos marchant sur les quais des Bassins à Flots Bordeaux avec un sac à dos floqué HighRing" loading="lazy">
                   <div class="ui-component-card--feature-content">
                     <h4 class="ui-component-card--feature-title">HighRing Bordeaux</h4>
@@ -179,6 +179,10 @@
               </div>
             </div>
           </footer>
+<script src="script.js"></script>
 <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
 <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
-<script src="script.js"></script>
+<script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+<script>
+  AOS.init();
+</script>
