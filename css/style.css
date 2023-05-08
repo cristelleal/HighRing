@@ -557,7 +557,7 @@ svg {
   padding: 7.375rem var(--ui-layout-container) 5rem;
   display: none; 
   font-size: 1.05rem;
-  font-family: 'Montserrat', 'sans-serif';
+  font-family: var(--ui-typography-typeface);
   font-weight: 500;
 } 
 
