@@ -409,13 +409,12 @@ svg {
   height: calc(100vh - 45px);  
   position: absolute;
   top: 65px;
-  right: -2rem;     
+  right: -1.2rem;     
   background: var(--ui-color-background-primary);     
   transform: translateX(110%);
   -webkit-transform: translateX(110%);
   transition: all .5s ease-in-out;
   -webkit-transition: all .5s ease-in-out;
-
 }
 
 .show-nav .navbar__links { 
