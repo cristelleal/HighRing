@@ -746,9 +746,10 @@ svg {
   row-gap: var(--ui-gap-testimonial);
 }
 
-.ui-section-testimonial--avatar {
-  height: 3rem;
-  width: 3rem;
+.ui-section-testimonial i {
+  font-size: 16px;
+  color: var(--ui-color-n-1100);
+  margin: 0.06rem;
 }
 
 .ui-section-testimonial--quote {
