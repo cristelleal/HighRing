@@ -1,24 +1,105 @@
+.root {
+
+    /* COLOR PALETTE */
+    --ui-color-n-000: #fff;
+    --ui-color-n-050: #f5f5f5;
+    --ui-color-n-100: #ebebeb;
+    --ui-color-n-300: #aeaeae;
+    --ui-color-n-500: #1e2146;
+    --ui-color-n-700: #1f2348;
+    --ui-color-n-900: #000046;
+    --ui-color-n-1050: #e0bf54b9;
+    --ui-color-n-1100: #E0C054;
+    --ui-color-n-1300: #d2a61d;
+    
+    /* BACKGROUND COLOR */
+    
+    --ui-color-background-primary  : var(--ui-color-n-000);
+    --ui-color-background-secondary: var(--ui-color-n-050);
+    --ui-color-background-tertiary : var(--ui-color-n-100);
+    
+    /* BORDER COLOR */
+    
+    --ui-color-border: var(--ui-color-n-100);
+    
+    /* TYPOGRAPHY COLOR */
+    
+    --ui-color-typography-heading: var(--ui-color-n-500);
+    --ui-color-typography-body   : var(--ui-color-n-900);
+    --ui-color-typography-note   : var(--ui-color-n-300);
+    --ui-color-typography-button : var(--ui-color-n-000);
+    
+} 
+
 /*--------------------------------------------------------------
 |
 | FAQ
 |
 --------------------------------------------------------------*/
 
-.ui-section-faq { padding-bottom: 5rem; }
-
-.faq-content-text { margin: 0.5rem; }
+.ui-section-faq { padding-bottom: 5rem; text-align: center; }
 
 .ui-section-faq__layout {
     padding: 5rem 0 5rem 0;
-    row-gap: var(--ui-gap-faq);
+    row-gap: 1rem;
     text-align: left;
 }
 
-.ui-section-faq--question {
-    background-image: url(https://res.cloudinary.com/uisual/image/upload/assets/icons/question.svg);
-    margin-bottom: .5rem;
+/* Animations */
+
+.faq-question {
+    padding-top: 1.75rem;
+    padding-bottom: 1rem;
+    border-bottom: 1px dotted #ccc;
 }
 
-.ui-section-faq--answer { padding-left: 1.875rem; }
-
-.ui-section-faq--note { text-align: center; }
+.panel-title {
+    font-size: 24px;
+    width: 90%;
+    margin-left: 2rem;
+    position: relative;
+    display: block;
+    cursor: pointer;
+}
+  
+.panel-content {
+    font-size: 20px;
+    padding: 0px 14px;
+    margin: 0 40px;
+    height: 0;
+    overflow: hidden;
+    position: relative;
+    opacity: 0;
+    -webkit-transition: .4s ease;
+    -moz-transition: .4s ease;
+    -o-transition: .4s ease;
+    transition: .4s ease;
+}
+  
+.panel:checked ~ .panel-content{
+    height: auto;
+    opacity: 1;
+    padding: 14px;
+}
+  
+.plus {
+    position: absolute;
+    color: var(--ui-color-n-1300);
+    font-size: 42px;
+    line-height: 100%;
+    -webkit-transition: .2s ease;
+    -moz-transition: .2s ease;
+    -o-transition: .2s ease;
+    transition: .2s ease;
+}
+  
+.panel:checked ~ .plus {
+    -webkit-transform: rotate(45deg);
+    -moz-transform: rotate(45deg);
+    -o-transform: rotate(45deg);
+    transform: rotate(45deg);
+}
+  
+.panel {
+    display: none;
+}

@@ -70,6 +70,23 @@
     background-color: var(--ui-color-background-secondary);
 }
 
+.ui-section-candidate-faq { text-align: center; padding: 5rem; background-color: var(--ui-color-background-secondary); }
+
+.prime {
+    margin-top: 3.5rem;
+    padding: 2rem;
+    border: 1px dashed #ccc;
+}
+
+.prime i {
+    color: var(--ui-color-n-1100);
+    font-size: 25px;
+}
+
+.prime span {
+    color: var(--ui-color-n-300);
+}
+
 /* CANDIDATE FORM */
 
 .ui-section-candidate-form {
