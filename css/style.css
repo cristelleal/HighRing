@@ -657,20 +657,26 @@ svg {
 |
 --------------------------------------------------------------*/
 
-/* .ui-section-customer__layout {
+.ui-section-customer {
+  background-color: var(--ui-color-background-secondary);
+  padding-top: 5rem;
+  padding-bottom: 5rem;
+}
+
+.ui-section-customer__layout {
   display: grid;
   grid-template-columns: repeat(2,1fr);
   row-gap: var(--ui-gap-customer);
 }
 
 .ui-section-customer--logo {
-  height: 2rem;
+  height: 3rem;
   width: auto;
 }
 
 .ui-section-customer--logo-str { height: 1.75rem; }
   
-.ui-section-customer--logo-bhn { height: 1.375rem; } */
+.ui-section-customer--logo-bhn { height: 1.375rem; }
 
 /*--------------------------------------------------------------
 |
@@ -955,7 +961,7 @@ svg {
   |
   ------------------------------------------------------------*/
 
-  /* .ui-section-customer__layout {
+  .ui-section-customer__layout {
     display: flex;
     column-gap: var(--ui-gap-customer);
     flex-direction: row;
@@ -966,7 +972,7 @@ svg {
     margin-right: 0;
     height: 2rem;
     width: auto;
-  } */
+  }
 
   /*------------------------------------------------------------
   |
