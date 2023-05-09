@@ -63,6 +63,8 @@
 
 .hbspt-form {
     max-width: 100vw;
+    padding-top: 5rem;
+    padding-bottom: 5rem;
 }
 
 /*--------------------------------------------------------------
