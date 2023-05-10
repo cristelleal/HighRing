@@ -38,7 +38,6 @@
 --------------------------------------------------------------*/
 
 .ui-section-construction {
-    background-color: var(--ui-color-background-secondary);
     padding-top: 5rem;
     padding-bottom: 5rem;
 }
@@ -72,6 +71,41 @@
 
 .ui-section-close-construction h2 {
     text-align: center;
+}
+
+/* SLIDER */
+
+.slider {
+    position: relative;
+    display: flex;
+    align-items: center;
+    width: 100%;
+    max-width: 58rem;
+    margin: auto;
+    background-color: var(--ui-color-background-secondary);
+}
+
+.before, .after {
+    font-size: 2rem;
+    position: absolute;
+    top: auto;
+    background: rgba(0, 0, 0, 0.193);
+    color: rgba(255, 255, 255, 0.8);
+    font-weight: bold;
+    cursor: pointer;
+    padding: 0.3rem;
+}
+
+.slide-content {
+    padding: 3rem;
+}
+
+.before {
+    left: 0;
+}
+
+.after {
+    right: 0;
 }
 
 /* TESTIMONIAL */
