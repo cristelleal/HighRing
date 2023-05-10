@@ -49,12 +49,10 @@
     padding-bottom: 5rem;
     padding-top: 5rem;
     text-align: center;
-    padding-left: var(--ui-layout-container);
-    padding-right: var(--ui-layout-container);
 }
   
 .ui-section-storytelling--icon {
-    border-radius: 99px;
+    border-radius: 50%;
     width: 5rem;
     height: 5rem;
     margin-top: 1rem;

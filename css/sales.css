@@ -33,49 +33,39 @@
 
 /*--------------------------------------------------------------
 |
-| CONSTRUCTION
+| SALES
 |
 --------------------------------------------------------------*/
 
-.ui-section-construction {
+.ui-section-sales {
     padding-top: 5rem;
     padding-bottom: 5rem;
 }
 
-.ui-section-construction--list {
-    list-style-type: none;
-}
-
-.ui-section-construction--list span {
-    color: var(--ui-color-n-1100);
-}
-
-.ui-section-construction--title {
+.ui-section-sales--title {
     padding-top: 5rem;
 }
 
-.ui-section-construction i {
+.ui-section-sales h2 { text-align: center; }
+
+.ui-section-sales i {
     margin-left: 35%;
     font-size: 99px;
     color: var(--ui-color-n-1100);
 }
 
-.ui-section-close-construction {
+.ui-section-close-sales {
     padding-top: 5rem;
     padding-bottom: 5rem;
     background-color: var(--ui-color-background-primary);
     text-align: center;
 }
 
-.ui-section-close-construction h2 {
+.ui-section-close-sales h2 {
     text-align: center;
 }
 
-/* SLIDER */
-
-.ui-section-construction h2 { text-align: center; }
-
-.slider {
+.ui-section-sales--content {
     position: relative;
     display: flex;
     align-items: center;
@@ -85,36 +75,17 @@
     background-color: var(--ui-color-background-secondary);
 }
 
-.before, .after {
-    font-size: 2rem;
-    position: absolute;
-    top: auto;
-    background: rgba(0, 0, 0, 0.193);
-    color: var(--ui-color-background-secondary);
-    font-weight: bold;
-    cursor: pointer;
-    padding: 0.3rem;
-}
-
-.slide-content {
+.content {
     padding: 3rem;
-}
-
-.before {
-    left: 0;
-}
-
-.after {
-    right: 0;
 }
 
 /* TESTIMONIAL */
 
-.ui-section-construction--testimonial {
+.ui-section-sales--testimonial {
     padding-top: 5rem;
 }
 
-.ui-section-construction--testimonial span {
+.ui-section-sales--testimonial span {
     font-weight: bold;
     font-size: 1.75rem;
     padding-left: 0.5rem;
@@ -122,7 +93,7 @@
     line-height: 1.5rem ;
 }
 
-.ui-section-construction--testimonial img {
+.ui-section-sales--testimonial img {
     border-radius: 50%;
     width: 15rem;
     height: 15rem;

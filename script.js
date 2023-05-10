@@ -1,13 +1,14 @@
 // MENU HAMBURGER 
 
+// Sélectionner les élément du menu
 function toggleMenu () {  
     const navbar = document.querySelector('.navbar');
     const burger = document.querySelector('.burger');
-    
+    // Fonction pour afficer le contenu du menu
     burger.addEventListener('click', (e) => {    
       navbar.classList.toggle('show-nav');
     });    
-    // bonus
+    // Animation
     const navbarLinks = document.querySelectorAll('.navbar a');
     navbarLinks.forEach(link => {
       link.addEventListener('click', (e) => {    
