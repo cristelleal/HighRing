@@ -613,7 +613,7 @@ svg {
 }
 
 .ui-section-hero img {
-  border-radius: 200px 50px 131px 50px;
+  border-radius: 1.5rem;
   box-shadow: 30px 15px var(--ui-color-n-1050);
 }
 
