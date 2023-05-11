@@ -187,7 +187,12 @@ svg {
   height: auto;
   margin: 0 auto;
   width: 100%;
-  /* box-shadow:8px 8px 10px 0 rgba(0,0,0,0.5); */
+}
+
+.ui-testimonial-blob {
+  border-radius: 86% 14% 22% 78% / 50% 47% 53% 50%; 
+  width: 16rem;
+  height: 16rem;  
 }
 
 /*--------------------------------------------------------------
@@ -608,7 +613,7 @@ svg {
 }
 
 .ui-section-hero img {
-  border-radius: 1.5rem;
+  border-radius: 200px 50px 131px 50px;
   box-shadow: 30px 15px var(--ui-color-n-1050);
 }
 
