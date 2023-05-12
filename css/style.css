@@ -14,7 +14,7 @@
   --ui-color-n-050: #f5f5f5;
   --ui-color-n-100: #ebebeb;
   /* --ui-color-n-300: #aeaeae; */
-  --ui-color-n-300: #767373;
+  --ui-color-n-300: #636161;
   --ui-color-n-500: #1e2146;
   --ui-color-n-700: #1f2348;
   --ui-color-n-900: #000046;
@@ -188,7 +188,7 @@ svg {
   display: block;
   height: auto;
   margin: 0 auto;
-  max-width: 100%;h
+  max-width: 100%;
 }
 
 /*--------------------------------------------------------------

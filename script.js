@@ -84,3 +84,4 @@ window.onload = () => {
     document.getElementById('progress').style.width = progress + 'px';
   })
 }
+
