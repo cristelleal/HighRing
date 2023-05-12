@@ -95,7 +95,7 @@
   /* BORDER RADIUS */
   
   --ui-radius-avatar: 5rem;
-  --ui-radius-button: 5rem;
+  --ui-radius-button: .5rem;
   --ui-radius-card  : .5rem;
 
 }
@@ -239,7 +239,8 @@ svg {
   border: .0625rem solid var(--ui-color-brand);
   border-radius: var(--ui-radius-button);
   display: block;
-  font-weight: 700;
+  /* font-weight: 700; */
+  font-weight: normal;
   line-height: 1;
   text-align: center;
   text-decoration: none;
@@ -527,12 +528,11 @@ svg {
   display: none; 
   font-size: 1.05rem;
   font-family: var(--ui-typography-typeface);
-  font-weight: 500;
+  /* font-weight: 500; */
+  font-weight: normal;
 } 
 
-.list-items {
-  display: flex;
-}
+.list-items { display: flex; }
 
 .items {
   margin: 1rem;
@@ -548,15 +548,13 @@ svg {
   text-align: center;
   text-decoration: none;
   list-style-type: none;
-  font-family: 'Montserrat','sans-serif';
-  font-weight: 400;
   font-size: var(--ui-color-typography-note);
 }
 
 .items-sublist {
   text-align: center;
   padding: 1rem;
-  margin: 0.35rem;
+  margin-top: 0.1rem;
   line-height: 1.5;
   transition: .1s ease-out;
   background-color: var(--ui-color-background-primary);
@@ -582,21 +580,11 @@ svg {
   z-index: 2; 
 }
 
-.items:hover > ul {
-  display: block;
-}
+.items:hover > ul { display: block; }
 
-.items span {
-  color: var(--ui-color-n-1300);
-}
+.items span { color: var(--ui-color-n-1300); }
 
-.items span:hover {
-  color: var(--ui-color-brand);
-}
-
-.active:hover {
-  color: var(--ui-color-n-1300);
-}
+.active:hover { color: var(--ui-color-n-1300); }
 
 /*--------------------------------------------------------------
 |

@@ -69,3 +69,4 @@ document.addEventListener("DOMContentLoaded", function(event) {
     showSlide(currentIndex); // Afficher le contenu correspondant
   });
 });
+
