@@ -13,7 +13,6 @@
   --ui-color-n-000: #fff;
   --ui-color-n-050: #f5f5f5;
   --ui-color-n-100: #ebebeb;
-  /* --ui-color-n-300: #aeaeae; */
   --ui-color-n-300: #636161;
   --ui-color-n-500: #1e2146;
   --ui-color-n-700: #1f2348;
@@ -235,7 +234,6 @@ svg {
   border: .0625rem solid var(--ui-color-brand);
   border-radius: var(--ui-radius-button);
   display: block;
-  /* font-weight: 700; */
   font-weight: normal;
   line-height: 1;
   text-align: center;
@@ -900,7 +898,7 @@ svg {
 --------------------------------------------------------------*/
 
 #progress {
-  height: 8px;
+  height: 7px;
 }
 
   /*------------------------------------------------------------

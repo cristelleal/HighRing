@@ -18,17 +18,6 @@
 --ui-color-background-secondary: var(--ui-color-n-050);
 --ui-color-background-tertiary : var(--ui-color-n-100);
 
-/* BORDER COLOR */
-
---ui-color-border: var(--ui-color-n-100);
-
-/* TYPOGRAPHY COLOR */
-
---ui-color-typography-heading: var(--ui-color-n-500);
---ui-color-typography-body   : var(--ui-color-n-900);
---ui-color-typography-note   : var(--ui-color-n-300);
---ui-color-typography-button : var(--ui-color-n-000);
-
 } 
 
 /*--------------------------------------------------------------

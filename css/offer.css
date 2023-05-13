@@ -17,47 +17,35 @@
     --ui-color-background-primary  : var(--ui-color-n-000);
     --ui-color-background-secondary: var(--ui-color-n-050);
     --ui-color-background-tertiary : var(--ui-color-n-100);
-    
-    /* BORDER COLOR */
-    
-    --ui-color-border: var(--ui-color-n-100);
-    
-    /* TYPOGRAPHY COLOR */
-    
-    --ui-color-typography-heading: var(--ui-color-n-500);
-    --ui-color-typography-body   : var(--ui-color-n-900);
-    --ui-color-typography-note   : var(--ui-color-n-300);
-    --ui-color-typography-button : var(--ui-color-n-000);
-    
-    } 
+} 
 
 /*--------------------------------------------------------------
 |
-| CANDIDATE
+| OFFER
 |
 --------------------------------------------------------------*/
 
-.ui-section-candidate--list span {
+.ui-section-offer--list span {
     color: var(--ui-color-n-1100);
 }
 
-.ui-section-candidate--list {
+.ui-section-offer--list {
     list-style-type: none;
     text-align: initial;
 }
 
-.ui-section-candidate--title {
+.ui-section-offer--title {
     padding-top: 5rem;
 }
 
-.ui-section-candidate_layout {
+.ui-section-offer_layout {
     padding-bottom: 5rem;
     padding-top: 5rem;
     padding-left: var(--ui-layout-container);
     padding-right: var(--ui-layout-container);
 }
   
-.ui-section-candidate_layout h3 {
+.ui-section-offer_layout h3 {
     background-image: url(https://res.cloudinary.com/uisual/image/upload/assets/icons/check.svg);
     background-repeat: no-repeat;
     background-size: 1.75rem;
@@ -65,11 +53,11 @@
     background-position: 0 0;
 }
 
-.ui-section-candidate {
+.ui-section-offer {
     background-color: var(--ui-color-background-secondary);
 }
 
-.ui-section-candidate-faq { 
+.ui-section-offer-faq { 
     text-align: center; 
     padding-top: 5rem;
     padding-bottom: 5rem; 
@@ -90,14 +78,14 @@
     color: var(--ui-color-n-300);
 }
 
-/* CANDIDATE FORM */
+/* FORM */
 
-.ui-section-candidate-form {
+.ui-section-offer-form {
     padding-top: 5rem;
     padding-bottom: 5rem;
 }
 
-.ui-section-candidate-form h2 {
+.ui-section-offer-form h2 {
     padding-top: 1rem;
     padding-bottom: 1.5rem;
     text-align: center;

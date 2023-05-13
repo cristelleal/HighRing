@@ -18,62 +18,45 @@
     --ui-color-background-secondary: var(--ui-color-n-050);
     --ui-color-background-tertiary : var(--ui-color-n-100);
     
-    /* BORDER COLOR */
-    
-    --ui-color-border: var(--ui-color-n-100);
-    
-    /* TYPOGRAPHY COLOR */
-    
-    --ui-color-typography-heading: var(--ui-color-n-500);
-    --ui-color-typography-body   : var(--ui-color-n-900);
-    --ui-color-typography-note   : var(--ui-color-n-300);
-    --ui-color-typography-button : var(--ui-color-n-000);
-    
 } 
 
 /*--------------------------------------------------------------
 |
-| CONSTRUCTION
+| BRANDS
 |
 --------------------------------------------------------------*/
 
-.ui-section-construction {
+.ui-section-brands {
     padding-top: 5rem;
     padding-bottom: 5rem;
 }
 
-.ui-section-construction--list {
+.ui-section-brands--list {
     list-style-type: none;
 }
 
-.ui-section-construction--list span {
+.ui-section-brands--list span {
     color: var(--ui-color-n-1100);
 }
 
-.ui-section-construction--title {
+.ui-section-brands--title {
     padding-top: 5rem;
 }
 
-.ui-section-construction i {
-    margin-left: 35%;
-    font-size: 99px;
-    color: var(--ui-color-n-1100);
-}
-
-.ui-section-close-construction {
+.ui-section-close-brands {
     padding-top: 5rem;
     padding-bottom: 5rem;
     background-color: var(--ui-color-background-primary);
     text-align: center;
 }
 
-.ui-section-close-construction h2 {
+.ui-section-close-brands h2 {
     text-align: center;
 }
 
 /* SLIDER */
 
-.ui-section-construction h2 { text-align: center; }
+.ui-section-brands h2 { text-align: center; }
 
 .slider {
     position: relative;
@@ -108,13 +91,29 @@
     right: 0;
 }
 
+/* JOBS */
+
+.ui-section-brands--content {
+    position: relative;
+    display: flex;
+    align-items: center;
+    width: 100%;
+    max-width: 58rem;
+    margin: auto;
+    background-color: var(--ui-color-background-secondary);
+}
+
+.content {
+    padding: 3rem;
+}
+
 /* TESTIMONIAL */
 
-.ui-section-construction--testimonial {
+.ui-section-brands--testimonial {
     padding-top: 5rem;
 }
 
-.ui-section-construction--testimonial span {
+.ui-section-brands--testimonial span {
     font-weight: bold;
     font-size: 1.75rem;
     padding-left: 0.5rem;
