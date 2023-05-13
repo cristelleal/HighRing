@@ -40,9 +40,7 @@
     border-radius: 30px;
 }
 
-.ion-icon-contact:hover {
-    background-color: var(--ui-color-n-1050);
-}
+.ion-icon-contact:hover { background-color: var(--ui-color-n-1050); }
 
 .ui-section-feature__layout { row-gap: var(--ui-gap-card); flex-direction: column; }
 

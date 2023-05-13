@@ -26,13 +26,9 @@
 |
 --------------------------------------------------------------*/
   
-.ui-section-storytelling {
-    background-color: var(--ui-color-background-secondary);
-}
+.ui-section-storytelling { background-color: var(--ui-color-background-secondary); }
 
-.ui-section-storytelling--title {
-    padding-top: 5rem;
-}
+.ui-section-storytelling--title { padding-top: 5rem; }
 
 .ui-section-storytelling_layout {
     padding-bottom: 5rem;

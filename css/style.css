@@ -372,13 +372,9 @@ svg {
   font-size: 1.1rem;
 }
 
-.navbar__links { 
-  display: flex;  
-}
+.navbar__links { display: flex; }
 
-.navbar__link { 
-  padding: 0 10px;
-}
+.navbar__link { padding: 0 10px; }
 
 .navbar__link > a { 
   color: var(--ui-color-n-700);
@@ -386,9 +382,7 @@ svg {
   list-style-type: none;
 }
 
-.burger {
-  display: block;
-}
+.burger { display: block; }
 
 .navbar__links { 
   list-style-type: none;
@@ -645,9 +639,7 @@ svg {
   row-gap: var(--ui-gap-customer);
 }
 
-.ui-section-customer--logo {
-  width: 5.5rem;
-}
+.ui-section-customer--logo { width: 5.5rem; }
 
 .ui-section-customer--logo-str { height: 1.75rem; }
   
@@ -664,15 +656,11 @@ svg {
   padding-top: 5rem;
 }
 
-.ui-section-feature__layout img {
-  border-radius: 1.5rem;
-}
+.ui-section-feature__layout img { border-radius: 1.5rem; }
 
 .ui-section-feature__layout { row-gap: var(--ui-gap-feature); }
 
-.ui-section-feature__layout:first-of-type div {
-  grid-row-start: 1;
-}
+.ui-section-feature__layout:first-of-type div { grid-row-start: 1; }
 
 .ui-section-feature__layout:last-of-type { margin-top: 5rem; }
 
@@ -723,9 +711,7 @@ svg {
   text-align: center;
 }
 
-.ui-section-testimonial__layout {
-  row-gap: var(--ui-gap-testimonial);
-}
+.ui-section-testimonial__layout { row-gap: var(--ui-gap-testimonial); }
 
 .ui-section-testimonial i {
   font-size: 18px;
@@ -769,34 +755,22 @@ svg {
   cursor: pointer;
 }
 
-.ui-section-footer img {
-  width: 4rem;
-}
+.ui-section-footer img { width: 4rem; }
 
-.ui-section-footer__layout {
-  column-gap: var(--ui-layout-gutter);
-}
+.ui-section-footer__layout { column-gap: var(--ui-layout-gutter); }
 
-.ui-section-footer__layout {
-  flex-direction: column;
-}
+.ui-section-footer__layout { flex-direction: column; }
 
 .ui-section-footer--copyright {
   line-height: 2;
   text-align: center;
 }
 
-.ui-section-footer--icon {
-  font-size: var(--ui-typography-icon);
-}
+.ui-section-footer--icon { font-size: var(--ui-typography-icon); }
 
-.ui-section-footer--icon a {
-  padding-left: 0.5rem;
-}
+.ui-section-footer--icon a { padding-left: 0.5rem; }
 
-.ui-section-footer--icon a:hover {
-  color: var(--ui-color-n-1300);
-}
+.ui-section-footer--icon a:hover { color: var(--ui-color-n-1300); }
 
 /*--------------------------------------------------------------
  -  MEDIA
@@ -853,13 +827,9 @@ svg {
    - IMAGE
   ------------------------------------------------------------*/
 
-  .ui-image-half-left {
-    padding-right: var(--ui-layout-gutter);
-  }
+  .ui-image-half-left { padding-right: var(--ui-layout-gutter); }
 
-  .ui-image-half-right {
-    padding-left: var(--ui-layout-gutter);
-  }
+  .ui-image-half-right { padding-left: var(--ui-layout-gutter); }
 
   /*------------------------------------------------------------
    - LAYOUT
@@ -892,14 +862,12 @@ svg {
    - COMPONENT
   ------------------------------------------------------------*/
   /*--------------------------------------------------------------
-|
-| - PROGRESS BAR
-|
---------------------------------------------------------------*/
+  |
+  | - PROGRESS BAR
+  |
+  --------------------------------------------------------------*/
 
-#progress {
-  height: 7px;
-}
+#progress { height: 7px; }
 
   /*------------------------------------------------------------
   |
@@ -921,13 +889,9 @@ svg {
   |  - HEADER
   |
   ------------------------------------------------------------*/
-  .navbar__links {
-    right: -5rem;
-  }
+  .navbar__links { right: -5rem; }
 
-  .ui-section-header--logo { 
-    max-width: 20%;
-  }
+  .ui-section-header--logo { max-width: 20%; }
 
   /*------------------------------------------------------------
   |
@@ -963,9 +927,7 @@ svg {
   |
   ------------------------------------------------------------*/
 
-  .ui-section-feature__layout:first-of-type div {
-    grid-row-start: initial;
-  }
+  .ui-section-feature__layout:first-of-type div { grid-row-start: initial; }
 
   /*------------------------------------------------------------
   |
@@ -1021,9 +983,7 @@ svg {
   |
   ------------------------------------------------------------*/
   
-  .navbar {
-    display: none;
-  }
+  .navbar { display: none; }
 
   .ui-section-header--nav {
     background-color: transparent;
@@ -1170,9 +1130,7 @@ svg {
     padding-top: 7.5rem;
   }
 
-  .ui-section-feature__layout:last-of-type {
-    margin-top: 7.5rem;
-  }
+  .ui-section-feature__layout:last-of-type { margin-top: 7.5rem; }
 
   /* LIST */
 
@@ -1227,8 +1185,6 @@ svg {
     padding-top: 3rem;
   }
 
-  .ui-section-footer__layout {
-    flex-direction: row;
-  }
+  .ui-section-footer__layout { flex-direction: row; }
 
 }

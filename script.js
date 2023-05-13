@@ -1,14 +1,13 @@
 // MENU HAMBURGER 
 
-// Sélectionner les élément du menu
 function toggleMenu () {  
     const navbar = document.querySelector('.navbar');
     const burger = document.querySelector('.burger');
-    // Fonction pour afficer le contenu du menu
+
     burger.addEventListener('click', (e) => {    
       navbar.classList.toggle('show-nav');
     });    
-    // Animation
+
     const navbarLinks = document.querySelectorAll('.navbar a');
     navbarLinks.forEach(link => {
       link.addEventListener('click', (e) => {    
@@ -19,54 +18,46 @@ function toggleMenu () {
   }
 toggleMenu();
 
-// SLIDER CONSTRUCTION PAGE
+// SLIDER @CONSTRUCTION PAGE
 
-// Attendre que le DOM soit chargé
-document.addEventListener("DOMContentLoaded", function(event) {
-  // Sélectionner les éléments du slider
-  var slider = document.querySelector(".slider");
-  var beforeBtn = slider.querySelector(".before");
-  var afterBtn = slider.querySelector(".after");
-  var slideContents = slider.querySelectorAll(".slide-content");
+document.addEventListener('DOMContentLoaded', function(event) {
 
-  var currentIndex = 0; // Index du contenu actuel
+  var slider = document.querySelector('.slider');
+  var beforeBtn = slider.querySelector('.before');
+  var afterBtn = slider.querySelector('.after');
+  var slideContents = slider.querySelectorAll('.slide-content');
 
-  // Fonction pour afficher le contenu du slider à l'index spécifié
+  var currentIndex = 0; 
+
   function showSlide(index) {
-    // Masquer tous les contenus
+   
     slideContents.forEach(function(content) {
-      content.style.display = "none";
+      content.style.display = 'none';
     });
 
-    // Afficher le contenu à l'index spécifié
-    slideContents[index].style.display = "block";
+    slideContents[index].style.display = 'block';
   }
 
-  // Afficher le premier contenu au chargement de la page
   showSlide(currentIndex);
 
-  // Gérer le clic sur le bouton précédent
-  beforeBtn.addEventListener("click", function() {
-    currentIndex--; // Décrémenter l'index
+  beforeBtn.addEventListener('click', function() {
+    currentIndex--; 
 
-    // Vérifier les limites de l'index
     if (currentIndex < 0) {
       currentIndex = slideContents.length - 1;
     }
 
-    showSlide(currentIndex); // Afficher le contenu correspondant
+    showSlide(currentIndex); 
   });
 
-  // Gérer le clic sur le bouton suivant
-  afterBtn.addEventListener("click", function() {
-    currentIndex++; // Incrémenter l'index
-
-    // Vérifier les limites de l'index
+  afterBtn.addEventListener('click', function() {
+    currentIndex++; 
+    
     if (currentIndex >= slideContents.length) {
       currentIndex = 0;
     }
 
-    showSlide(currentIndex); // Afficher le contenu correspondant
+    showSlide(currentIndex); 
   });
 });
 

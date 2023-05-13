@@ -90,6 +90,4 @@
     transform: rotate(45deg);
 }
   
-.panel {
-    display: none;
-}
+.panel { display: none; }

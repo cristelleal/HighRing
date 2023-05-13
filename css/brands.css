@@ -31,17 +31,11 @@
     padding-bottom: 5rem;
 }
 
-.ui-section-brands--list {
-    list-style-type: none;
-}
+.ui-section-brands--list { list-style-type: none; }
 
-.ui-section-brands--list span {
-    color: var(--ui-color-n-1100);
-}
+.ui-section-brands--list span { color: var(--ui-color-n-1100); }
 
-.ui-section-brands--title {
-    padding-top: 5rem;
-}
+.ui-section-brands--title { padding-top: 5rem; }
 
 .ui-section-close-brands {
     padding-top: 5rem;
@@ -50,9 +44,7 @@
     text-align: center;
 }
 
-.ui-section-close-brands h2 {
-    text-align: center;
-}
+.ui-section-close-brands h2 { text-align: center; }
 
 /* SLIDER */
 
@@ -79,17 +71,11 @@
     padding: 0.3rem;
 }
 
-.slide-content {
-    padding: 3rem;
-}
+.slide-content { padding: 3rem; }
 
-.before {
-    left: 0;
-}
+.before { left: 0; }
 
-.after {
-    right: 0;
-}
+.after { right: 0; }
 
 /* JOBS */
 
@@ -103,15 +89,11 @@
     background-color: var(--ui-color-background-secondary);
 }
 
-.content {
-    padding: 3rem;
-}
+.content { padding: 3rem; }
 
 /* TESTIMONIAL */
 
-.ui-section-brands--testimonial {
-    padding-top: 5rem;
-}
+.ui-section-brands--testimonial { padding-top: 5rem; }
 
 .ui-section-brands--testimonial span {
     font-weight: bold;

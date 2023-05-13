@@ -25,18 +25,14 @@
 |
 --------------------------------------------------------------*/
 
-.ui-section-offer--list span {
-    color: var(--ui-color-n-1100);
-}
+.ui-section-offer--list span { color: var(--ui-color-n-1100); }
 
 .ui-section-offer--list {
     list-style-type: none;
     text-align: initial;
 }
 
-.ui-section-offer--title {
-    padding-top: 5rem;
-}
+.ui-section-offer--title { padding-top: 5rem; }
 
 .ui-section-offer_layout {
     padding-bottom: 5rem;
@@ -53,9 +49,7 @@
     background-position: 0 0;
 }
 
-.ui-section-offer {
-    background-color: var(--ui-color-background-secondary);
-}
+.ui-section-offer { background-color: var(--ui-color-background-secondary); }
 
 .ui-section-offer-faq { 
     text-align: center; 
@@ -74,9 +68,7 @@
     font-size: 25px;
 }
 
-.prime span {
-    color: var(--ui-color-n-300);
-}
+.prime span { color: var(--ui-color-n-300); }
 
 /* FORM */
 
