@@ -102,3 +102,10 @@
     padding-right: 0.5rem;
     line-height: 1.5rem ;
 }
+
+.ui-testimonial-blob {
+    border-radius: 86% 14% 22% 78% / 50% 47% 53% 50%; 
+    width: 16rem;
+    height: 16rem;  
+  }
+  

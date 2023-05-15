@@ -30,7 +30,6 @@
 
 .ui-section-faq__layout {
     padding: 5rem 0 5rem 0;
-    row-gap: 1rem;
     text-align: left;
 }
 
@@ -50,6 +49,7 @@
     position: relative;
     display: block;
     cursor: pointer;
+    padding-bottom: 1rem;
 }
   
 .panel-content {
@@ -64,6 +64,7 @@
     -moz-transition: .4s ease;
     -o-transition: .4s ease;
     transition: .4s ease;
+    background-color: var(--ui-color-background-secondary);
 }
   
 .panel:checked ~ .panel-content{
@@ -91,3 +92,26 @@
 }
   
 .panel { display: none; }
+
+/*--------------------------------------------------------------
+ - MEDIA
+--------------------------------------------------------------*/
+
+/*--------------------------------------------------------------
+|
+| 8.1 768PX
+|
+--------------------------------------------------------------*/
+
+@media screen and (min-width: 48rem) {
+  
+    /*------------------------------------------------------------
+    |
+    | FAQ
+    |
+    ------------------------------------------------------------*/
+    
+    .faq-question {
+        margin: 0 15% 0 20%;
+    }
+}

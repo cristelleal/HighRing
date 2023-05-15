@@ -116,7 +116,7 @@ html { box-sizing: border-box; }
 }
 
 body {
-  background-color: var(--ui-color-background-primary);
+  background-color: var(--ui-color-background-primary); 
   color: var(--ui-color-typography-body);
   font-family: var(--ui-typography-typeface);
   font-feature-settings: "liga", "kern";
@@ -187,7 +187,7 @@ svg {
   display: block;
   height: auto;
   margin: 0 auto;
-  max-width: 100%;
+  width: 100%;
 }
 
 /*--------------------------------------------------------------
@@ -318,18 +318,6 @@ svg {
   position: fixed;
   bottom: 0;
   background-color: var(--ui-color-n-1100);
-}
-
-/*--------------------------------------------------------------
-|
-| - ILLUSTRATIONS
-|
---------------------------------------------------------------*/
-
-.ui-testimonial-blob {
-  border-radius: 86% 14% 22% 78% / 50% 47% 53% 50%; 
-  width: 16rem;
-  height: 16rem;  
 }
 
 /*--------------------------------------------------------------
@@ -616,7 +604,8 @@ svg {
 
 .ui-section-hero img {
   border-radius: 1.5rem;
-  box-shadow: 30px 15px var(--ui-color-n-1050);
+  box-shadow: 20px 8px var(--ui-color-n-1050); 
+  max-width: 100%;
 }
 
 .ui-section-hero__layout { row-gap: var(--ui-gap-hero); }
@@ -827,9 +816,9 @@ svg {
    - IMAGE
   ------------------------------------------------------------*/
 
-  .ui-image-half-left { padding-right: var(--ui-layout-gutter); }
+  /* .ui-image-half-left { padding-right: var(--ui-layout-gutter); }
 
-  .ui-image-half-right { padding-left: var(--ui-layout-gutter); }
+  .ui-image-half-right { padding-left: var(--ui-layout-gutter); } */
 
   /*------------------------------------------------------------
    - LAYOUT

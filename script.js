@@ -1,3 +1,5 @@
+window.onload = () => {
+
 // MENU HAMBURGER 
 
 function toggleMenu () {  
@@ -19,8 +21,6 @@ function toggleMenu () {
 toggleMenu();
 
 // SLIDER @CONSTRUCTION PAGE
-
-document.addEventListener('DOMContentLoaded', function(event) {
 
   var slider = document.querySelector('.slider');
   var beforeBtn = slider.querySelector('.before');
@@ -59,11 +59,9 @@ document.addEventListener('DOMContentLoaded', function(event) {
 
     showSlide(currentIndex); 
   });
-});
 
 // PROGRESS BAR
 
-window.onload = () => {
   window.addEventListener('scroll', () => {
 
     let height = document.documentElement.scrollHeight - window.innerHeight;
@@ -74,4 +72,7 @@ window.onload = () => {
 
     document.getElementById('progress').style.width = progress + 'px';
   })
+
+
 }
+
