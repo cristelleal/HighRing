@@ -346,6 +346,8 @@ svg {
   padding-bottom: .2rem;
   background-color: #1e214619; 
   backdrop-filter: blur(9px);
+  -webkit-backdrop-filter: blur(9px);
+
 }
 
 .ui-section-header__layout { justify-content: space-between; }
