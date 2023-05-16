@@ -22,12 +22,12 @@ function toggleMenu () {
   
   window.onload = () => {
 
-  var slider = document.querySelector('.slider');
-  var beforeBtn = slider.querySelector('.before');
-  var afterBtn = slider.querySelector('.after');
-  var slideContents = slider.querySelectorAll('.slide-content');
+  const slider = document.querySelector('.slider');
+  const beforeBtn = slider.querySelector('.before');
+  const afterBtn = slider.querySelector('.after');
+  const slideContents = slider.querySelectorAll('.slide-content');
 
-  var currentIndex = 0; 
+  let currentIndex = 0; 
 
   function showSlide(index) {
    
@@ -74,18 +74,16 @@ function toggleMenu () {
     document.getElementById('progress').style.width = progress + 'px';
   })
 
-// ANIMATION NAV SCROLL
+// NAVBAR SCROLL TRANSFORMATION
 
 const nav = document.querySelector('.ui-section-header');
-const feat = document.querySelector('.ui-section-header');
-let heightSection = feat.clientHeight;
+let heightSection = nav.clientHeight;
 
 window.addEventListener('scroll', () => {
   if (window.scrollY > heightSection){
-    nav.classList.add('scroll');
+    nav.classList.add('scroll');  
   } else {
     nav.classList.remove('scroll');
   }
 })
 
-// 
