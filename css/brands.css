@@ -60,6 +60,10 @@
     background-color: var(--ui-color-background-secondary);
 }
 
+.before { left: 0; }
+
+.after { right: 0; }
+
 .before, .after {
     font-size: 2rem;
     position: absolute;
@@ -72,10 +76,6 @@
 }
 
 .slide-content { padding: 3rem; }
-
-.before { left: 0; }
-
-.after { right: 0; }
 
 /* JOBS */
 

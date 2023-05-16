@@ -1,26 +1,26 @@
-window.onload = () => {
-
 // MENU HAMBURGER 
 
 function toggleMenu () {  
-    const navbar = document.querySelector('.navbar');
-    const burger = document.querySelector('.burger');
+  const navbar = document.querySelector('.navbar');
+  const burger = document.querySelector('.burger');
 
     burger.addEventListener('click', (e) => {    
       navbar.classList.toggle('show-nav');
     });    
-
+    
     const navbarLinks = document.querySelectorAll('.navbar a');
     navbarLinks.forEach(link => {
       link.addEventListener('click', (e) => {    
         navbar.classList.toggle('show-nav');
       }); 
     })
-     
+    
   }
-toggleMenu();
-
-// SLIDER @CONSTRUCTION PAGE
+  toggleMenu();
+  
+  // SLIDER @CONSTRUCTION PAGE
+  
+  window.onload = () => {
 
   var slider = document.querySelector('.slider');
   var beforeBtn = slider.querySelector('.before');
@@ -59,6 +59,7 @@ toggleMenu();
 
     showSlide(currentIndex); 
   });
+}
 
 // PROGRESS BAR
 
@@ -73,6 +74,18 @@ toggleMenu();
     document.getElementById('progress').style.width = progress + 'px';
   })
 
+// ANIMATION NAV SCROLL
 
-}
+const nav = document.querySelector('.ui-section-header');
+const feat = document.querySelector('.ui-section-header');
+let heightSection = feat.clientHeight;
 
+window.addEventListener('scroll', () => {
+  if (window.scrollY > heightSection){
+    nav.classList.add('scroll');
+  } else {
+    nav.classList.remove('scroll');
+  }
+})
+
+// 
