@@ -133,7 +133,8 @@ body {
 /* Works on Firefox */
 * {
   scrollbar-width: auto;
-  scrollbar-color: #bbb var(--ui-color-background-tertiary);
+  scrollbar-color: #bbb
+   var(--ui-color-background-tertiary);
 }
 
 /* Works on Chrome, Edge, and Safari */
