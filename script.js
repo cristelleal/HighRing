@@ -22,56 +22,56 @@ toggleMenu();
   
 // SLIDER @CONSTRUCTION PAGE
   
-  // const slider = document.getElementByClassName('.slider');
-  // const beforeBtn = slider.getElementByClassName('.before');
-  // const afterBtn = slider.getElementByClassName('.after');
-  // const slideContents = slider.getElementsByClassName('.slide-content');
+  const slider = document.querySelector('.slider');
+  const beforeBtn = slider.querySelector('.before');
+  const afterBtn = slider.querySelector('.after');
+  const slideContents = slider.querySelectorAll('.slide-content');
 
-  // let currentIndex = 0; 
+  let currentIndex = 0; 
 
-  // function showSlide(index) {
+  function showSlide(index) {
    
-  //   slideContents.forEach(function(content) {
-  //     content.style.display = 'none';
-  //   });
+    slideContents.forEach(function(content) {
+      content.style.display = 'none';
+    });
 
-  //   slideContents[index].style.display = 'block';
-  // }
+    slideContents[index].style.display = 'block';
+  }
 
-  // showSlide(currentIndex);
+  showSlide(currentIndex);
 
-  // beforeBtn.addEventListener('click', function() {
-  //   currentIndex--; 
+  beforeBtn.addEventListener('click', function() {
+    currentIndex--; 
 
-  //   if (currentIndex < 0) {
-  //     currentIndex = slideContents.length - 1;
-  //   }
+    if (currentIndex < 0) {
+      currentIndex = slideContents.length - 1;
+    }
 
-  //   showSlide(currentIndex); 
-  // });
+    showSlide(currentIndex); 
+  });
 
-  // afterBtn.addEventListener('click', function() {
-  //   currentIndex++; 
+  afterBtn.addEventListener('click', function() {
+    currentIndex++; 
     
-  //   if (currentIndex >= slideContents.length) {
-  //     currentIndex = 0;
-  //   }
+    if (currentIndex >= slideContents.length) {
+      currentIndex = 0;
+    }
 
-  //   showSlide(currentIndex); 
-  // });
+    showSlide(currentIndex); 
+  });
 
 // PROGRESS BAR
 
-  // window.addEventListener('scroll', () => {
+  window.addEventListener('scroll', () => {
 
-  //   let height = document.documentElement.scrollHeight - window.innerHeight;
-  //   let position = window.scrollY;
-  //   let width = document.documentElement.clientWidth;
+    let height = document.documentElement.scrollHeight - window.innerHeight;
+    let position = window.scrollY;
+    let width = document.documentElement.clientWidth;
 
-  //   let progress = position / height * width;
+    let progress = position / height * width;
 
-  //   document.getElementById('progress').style.width = progress + 'px';
-  // })
+    document.getElementById('progress').style.width = progress + 'px';
+  })
 
 // NAVBAR SCROLL TRANSFORMATION
 
