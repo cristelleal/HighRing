@@ -360,11 +360,11 @@ svg {
   top: 0;
   background-color: var(--ui-color-background-primary);
   z-index: 99;
-  transition: color 1s ease;
-  -webkit-transition: color 1s ease;
+  transition: 1s ease;
+  -webkit-transition: 1s ease;
 }
 
-.scroll {
+.ui-section-header.scroll {
   background-color: #ffffff3e; 
   backdrop-filter: blur(7.75px);
   -webkit-backdrop-filter: blur(9px);
