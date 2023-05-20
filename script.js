@@ -12,7 +12,6 @@ window.onload = () => {
   }
   toggleMenu();
 
-  // Ajout du gestionnaire d'événement de clic aux liens de la barre de navigation
   const navbarLinks = document.querySelectorAll('.navbar a');
   navbarLinks.forEach(link => {
     link.addEventListener('click', (e) => {
