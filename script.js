@@ -76,6 +76,7 @@ toggleMenu();
 // NAVBAR SCROLL TRANSFORMATION
 
 const nav = document.querySelector('.ui-section-header');
+const navStop = document.querySelector('.ui-section-hero')
 let heightSection = nav.clientHeight;
 
 window.addEventListener('scroll', () => {
