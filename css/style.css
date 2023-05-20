@@ -354,8 +354,8 @@ svg {
 --------------------------------------------------------------*/
 
 .ui-section-header {
-  padding-bottom: 1.25rem;
-  padding-top: 1.25rem;
+  padding-bottom: .2rem;
+  padding-top: .2rem;
   position: sticky;
   top: 0;
   background-color: var(--ui-color-background-primary);
@@ -564,7 +564,6 @@ svg {
   display: none; 
   font-size: 1.05rem;
   font-family: var(--ui-typography-typeface);
-  /* font-weight: 500; */
   font-weight: normal;
 } 
 
