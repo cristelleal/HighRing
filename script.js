@@ -1,11 +1,11 @@
 window.onload = () => {
-
+  
 // MENU HAMBURGER 
-
-function toggleMenu () {  
-  const navbar = document.querySelector('.navbar');
-  const burger = document.querySelector('.burger');
-
+  
+  function toggleMenu () {  
+    const navbar = document.querySelector('.navbar');
+    const burger = document.querySelector('.burger');
+    
     burger.addEventListener('click', (e) => {    
       navbar.classList.toggle('show-nav');
     });    
@@ -17,9 +17,36 @@ function toggleMenu () {
       }); 
     })
     
-}
-toggleMenu();
+  }
+  toggleMenu();
   
+// NAVBAR SCROLL TRANSFORMATION
+  
+  const nav = document.querySelector('.ui-section-header');
+  const navStop = document.querySelector('.ui-section-hero')
+  let heightSection = nav.clientHeight;
+  
+  window.addEventListener('scroll', () => {
+    if (window.scrollY > heightSection ){
+      nav.classList.add('scroll');  
+    } else {
+      nav.classList.remove('scroll');
+    }
+  })
+  
+// PROGRESS BAR
+  
+  window.addEventListener('scroll', () => {
+  
+    let height = document.documentElement.scrollHeight - window.innerHeight;
+    let position = window.scrollY;
+    let width = document.documentElement.clientWidth;
+  
+    let progress = position / height * width;
+  
+    document.getElementById('progress').style.width = progress + 'px';
+  })
+
 // SLIDER @CONSTRUCTION PAGE
   
   const slider = document.querySelector('.slider');
@@ -59,35 +86,8 @@ toggleMenu();
 
     showSlide(currentIndex); 
   });
+  
 
-// PROGRESS BAR
-
-  window.addEventListener('scroll', () => {
-
-    let height = document.documentElement.scrollHeight - window.innerHeight;
-    let position = window.scrollY;
-    let width = document.documentElement.clientWidth;
-
-    let progress = position / height * width;
-
-    document.getElementById('progress').style.width = progress + 'px';
-  })
-
-// NAVBAR SCROLL TRANSFORMATION
-
-const nav = document.querySelector('.ui-section-header');
-const navStop = document.querySelector('.ui-section-hero')
-let heightSection = nav.clientHeight;
-
-window.addEventListener('scroll', () => {
-  if (window.scrollY > heightSection ){
-    nav.classList.add('scroll');  
-  } else {
-    nav.classList.remove('scroll');
-  }
-})
 
 }
-
-
 
