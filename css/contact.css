@@ -23,14 +23,17 @@
 |
 --------------------------------------------------------------*/
 
+.ui-section-hero { background-color: var(--ui-color-background-secondary); }
+
+.container{
+    margin-inline: auto;
+    width: min(900px, calc(100% - 40px));
+}
+
 .ui-section-feature-contact {
   padding-top: 0;
   margin-top: 0;
   padding-bottom: 5rem;
-}
-
-.ui-section-hero span {
-    color: var(--ui-color-n-1100);
 }
 
 .ion-icon-contact {

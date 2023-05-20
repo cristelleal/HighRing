@@ -2,23 +2,24 @@ window.onload = () => {
   
 // MENU HAMBURGER 
   
-  function toggleMenu () {  
+  function toggleMenu() {
     const navbar = document.querySelector('.navbar');
     const burger = document.querySelector('.burger');
-    
-    burger.addEventListener('click', (e) => {    
+
+    burger.addEventListener('click', (e) => {
       navbar.classList.toggle('show-nav');
-    });    
-    
-    const navbarLinks = document.querySelectorAll('.navbar a');
-    navbarLinks.forEach(link => {
-      link.addEventListener('click', (e) => {    
-        navbar.classList.toggle('show-nav');
-      }); 
-    })
-    
+    });
   }
   toggleMenu();
+
+  // Ajout du gestionnaire d'événement de clic aux liens de la barre de navigation
+  const navbarLinks = document.querySelectorAll('.navbar a');
+  navbarLinks.forEach(link => {
+    link.addEventListener('click', (e) => {
+      const navbar = document.querySelector('.navbar');
+      navbar.classList.toggle('show-nav');
+    });
+  });
   
 // NAVBAR SCROLL TRANSFORMATION
   

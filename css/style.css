@@ -663,10 +663,6 @@ svg {
 
 .ui-section-customer--logo { width: 5.5rem; }
 
-.ui-section-customer--logo-str { height: 1.75rem; }
-  
-.ui-section-customer--logo-bhn { height: 1.375rem; }
-
 /*--------------------------------------------------------------
 |
 | - FEATURE
@@ -923,7 +919,7 @@ svg {
   |
   ------------------------------------------------------------*/
 
-  .ui-section-customer__layout {
+  /* .ui-section-customer__layout {
     display: flex;
     column-gap: var(--ui-gap-customer);
     flex-direction: row;
@@ -933,7 +929,7 @@ svg {
     margin-left: 0;
     margin-right: 0;
     height: 2rem;
-  }
+  } */
 
   /*------------------------------------------------------------
   |
@@ -1130,8 +1126,18 @@ svg {
   | - CUSTOMER
   |
   ------------------------------------------------------------*/
-
-  .ui-section-customer--logo { height: fit-content; }
+  
+  .ui-section-customer__layout {
+    display: flex;
+    column-gap: var(--ui-gap-customer);
+    flex-direction: row;
+  }
+  
+  .ui-section-customer--logo {
+    margin-left: 0;
+    margin-right: 0;
+    height: fit-content;
+  }
 
   /*------------------------------------------------------------
   |
