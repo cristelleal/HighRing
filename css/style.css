@@ -339,6 +339,7 @@ svg {
   height: 3.85px;
   border-radius: 0;
   position: fixed;
+  z-index: 99;
   bottom: 0;
   background-color: var(--ui-color-n-1100);
 }
