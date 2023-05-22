@@ -1,3 +1,5 @@
+// DOM LOADING
+
 window.onload = () => {
   
 // MENU HAMBURGER 
@@ -47,11 +49,12 @@ window.onload = () => {
   })
 
 // SLIDER @CONSTRUCTION PAGE
-  
-  const slider = document.querySelector('.slider');
-  const beforeBtn = slider.querySelector('.before');
-  const afterBtn = slider.querySelector('.after');
-  const slideContents = slider.querySelectorAll('.slide-content');
+
+if (document.querySelector('.ui-section-brands')) {
+
+  const beforeBtn = document.querySelector('.before');
+  const afterBtn = document.querySelector('.after');
+  const slideContents = document.querySelectorAll('.slide-content');
 
   let currentIndex = 0; 
 
@@ -85,8 +88,7 @@ window.onload = () => {
 
     showSlide(currentIndex); 
   });
-  
-
-
+}
+ 
 }
 
