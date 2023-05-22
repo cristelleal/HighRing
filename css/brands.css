@@ -33,7 +33,7 @@
 
 .ui-section-brands--list { list-style-type: none; }
 
-.ui-section-brands--list span { color: var(--ui-color-n-1100); }
+span { color: var(--ui-color-n-1100); }
 
 .ui-section-brands--title { padding-top: 5rem; }
 

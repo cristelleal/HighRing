@@ -28,11 +28,13 @@ window.onload = () => {
   let heightSection = nav.clientHeight;
   
   window.addEventListener('scroll', () => {
-    if (window.scrollY > heightSection ){
+
+    if (window.scrollY > heightSection){
       nav.classList.add('scroll');  
     } else {
       nav.classList.remove('scroll');
     }
+
   })
   
 // PROGRESS BAR
@@ -50,45 +52,46 @@ window.onload = () => {
 
 // SLIDER @CONSTRUCTION PAGE
 
-if (document.querySelector('.ui-section-brands')) {
+  if (document.querySelector('.ui-section-brands')) {
 
-  const beforeBtn = document.querySelector('.before');
-  const afterBtn = document.querySelector('.after');
-  const slideContents = document.querySelectorAll('.slide-content');
+    const beforeBtn = document.querySelector('.before');
+    const afterBtn = document.querySelector('.after');
+    const slideContents = document.querySelectorAll('.slide-content');
 
-  let currentIndex = 0; 
+    let currentIndex = 0; 
 
-  function showSlide(index) {
-   
-    slideContents.forEach(function(content) {
-      content.style.display = 'none';
+    function showSlide(index) {
+    
+      slideContents.forEach(function(content) {
+        content.style.display = 'none';
+      });
+
+      slideContents[index].style.display = 'block';
+    }
+
+    showSlide(currentIndex);
+
+    beforeBtn.addEventListener('click', function() {
+      currentIndex--; 
+
+      if (currentIndex < 0) {
+        currentIndex = slideContents.length - 1;
+      }
+
+    showSlide(currentIndex); 
     });
 
-    slideContents[index].style.display = 'block';
-  }
-
-  showSlide(currentIndex);
-
-  beforeBtn.addEventListener('click', function() {
-    currentIndex--; 
-
-    if (currentIndex < 0) {
-      currentIndex = slideContents.length - 1;
-    }
+    afterBtn.addEventListener('click', function() {
+      currentIndex++; 
+      
+      if (currentIndex >= slideContents.length) {
+        currentIndex = 0;
+      }
 
     showSlide(currentIndex); 
-  });
-
-  afterBtn.addEventListener('click', function() {
-    currentIndex++; 
-    
-    if (currentIndex >= slideContents.length) {
-      currentIndex = 0;
-    }
-
-    showSlide(currentIndex); 
-  });
+    });
 }
  
+
 }
 
