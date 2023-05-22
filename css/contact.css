@@ -23,9 +23,9 @@
 |
 --------------------------------------------------------------*/
 
-.ui-section-header { background-color:  var(--ui-color-background-secondary); }
+.ui-section-header { background-color:  var(--ui-color-background-tertiary); }
 
-.ui-section-hero { background-color: var(--ui-color-background-secondary); }
+.ui-section-hero { background-color: var(--ui-color-background-tertiary); }
 
 .container{
     margin-inline: auto;

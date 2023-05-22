@@ -371,8 +371,8 @@ svg {
   top: 0;
   background-color: var(--ui-color-background-primary);
   z-index: 99;
-  transition: .4s ease-in-out;
-  -webkit-transition: .4s ease-in-out;
+  transition: .05s ease-in-out;
+  -webkit-transition: .05s ease-in-out;
 }
 
 .scroll {
