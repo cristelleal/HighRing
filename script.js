@@ -24,18 +24,27 @@ window.onload = () => {
   
 // NAVBAR SCROLL TRANSFORMATION
   
-  const nav = document.querySelector('.ui-section-header');
-  let heightSection = nav.clientHeight;
-  
-  window.addEventListener('scroll', () => {
+const nav = document.querySelector('.ui-section-header');
+let heightSection = nav.clientHeight;
 
-    if (window.scrollY > heightSection){
-      nav.classList.add('scroll');  
-    } else {
+window.addEventListener('scroll', () => {
+  if (window.scrollY > heightSection) {
+    nav.classList.add('scroll');
+  } else {
+    nav.classList.remove('scroll');
+  }
+
+  if (window.location.href.includes('contact.html')) {
+
+    if (window.scrollY < heightSection) {
+      nav.style.backgroundColor = '#f5f5f5';
       nav.classList.remove('scroll');
-    }
-
-  })
+    } else {
+      nav.classList.add('scroll');
+      nav.style.backgroundColor = 'transparent';
+    } 
+  }
+});
   
 // PROGRESS BAR
   

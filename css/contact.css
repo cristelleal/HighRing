@@ -23,6 +23,8 @@
 |
 --------------------------------------------------------------*/
 
+.ui-section-header { background-color:  var(--ui-color-background-secondary); }
+
 .ui-section-hero { background-color: var(--ui-color-background-secondary); }
 
 .container{
