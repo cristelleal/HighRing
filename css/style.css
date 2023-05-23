@@ -388,7 +388,7 @@ svg {
 /* LOGO */
 
 .ui-section-header--logo { 
-  max-width: 75%;
+  max-width: 70%;
   margin-left: 0;
 }
 
@@ -828,7 +828,7 @@ svg {
 
     --ui-typography-h1: 2.1875rem;
     --ui-typography-h2: 1.75rem;
-    --ui-typography-p : 1.125rem;
+    --ui-typography-p : 1.05rem;
     --ui-typography-s : .875rem;
 
     /* MARGIN */
@@ -911,7 +911,7 @@ svg {
   ------------------------------------------------------------*/
   .navbar__links { right: -4.25rem; }
 
-  .ui-section-header--logo { max-width: 20%; }
+  .ui-section-header--logo { max-width: 23%; }
 
   /*------------------------------------------------------------
   |
@@ -922,24 +922,6 @@ svg {
   .ui-section-hero { text-align: left; }
 
   .ui-section-hero .ui-component-cta { align-items: start; }
-
-  /*------------------------------------------------------------
-  |
-  | - CUSTOMER
-  |
-  ------------------------------------------------------------*/
-
-  /* .ui-section-customer__layout {
-    display: flex;
-    column-gap: var(--ui-gap-customer);
-    flex-direction: row;
-  }
-  
-  .ui-section-customer--logo {
-    margin-left: 0;
-    margin-right: 0;
-    height: 2rem;
-  } */
 
   /*------------------------------------------------------------
   |
@@ -1055,7 +1037,6 @@ svg {
     --ui-typography-h1: 2.75rem;
     --ui-typography-h2: 2.1875rem;
     --ui-typography-h4: 1.4375rem;
-    --ui-typography-h3: 1.1875rem;
 
     /* MARGIN */
 
@@ -1078,13 +1059,6 @@ svg {
     --ui-gap-card    : 2rem;
     --ui-gap-brand   : 3rem;
   }
-
-  /*------------------------------------------------------------
-   - TYPOGRAPHY
-  ------------------------------------------------------------*/
-
-  .ui-text-intro { font-size: var(--ui-typography-h3); }
-
 
   /*------------------------------------------------------------
    - LAYOUT
