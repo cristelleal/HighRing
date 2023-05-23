@@ -1076,8 +1076,7 @@ svg {
     --ui-gap-header  : 2rem;
     --ui-gap-customer: 4rem;
     --ui-gap-card    : 2rem;
-    --ui-gap-brand : 3rem;
-    
+    --ui-gap-brand   : 3rem;
   }
 
   /*------------------------------------------------------------
