@@ -366,8 +366,6 @@ svg {
 --------------------------------------------------------------*/
 
 .ui-section-header {
-  padding-bottom: .2rem;
-  padding-top: .2rem;
   position: sticky;
   top: 0;
   background-color: var(--ui-color-background-primary);

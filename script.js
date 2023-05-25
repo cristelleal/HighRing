@@ -37,7 +37,7 @@ window.addEventListener('scroll', () => {
   if (window.location.href.includes('contact.html')) {
 
     if (window.scrollY < heightSection) {
-      nav.style.backgroundColor = '#ebebeb';
+      nav.style.backgroundColor = '#f5f5f5';
       nav.classList.remove('scroll');
     } else {
       nav.classList.add('scroll');
