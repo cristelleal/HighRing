@@ -26,7 +26,6 @@ function toggleMenu() {
 
 toggleMenu();
 
-
 // NAVBAR SCROLL TRANSFORMATION
   
 const nav = document.querySelector('.ui-section-header');
@@ -105,8 +104,17 @@ window.addEventListener('scroll', () => {
     showSlide(currentIndex); 
     });
 }
- 
 
+// LANDSCAPE 
+
+function checkOrientation() {
+ 
+  if(window.innerHeight < window.innerWidth){
+    alert('Veuillez passer en mode portrait pour une meilleure expérience utilisateur de ce site 💻');
+  g}
+}
+
+window.addEventListener('resize', checkOrientation);
 
 }
 

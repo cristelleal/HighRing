@@ -411,8 +411,6 @@ svg {
   list-style-type: none;
 }
 
-.burger { display: block; }
-
 .navbar__links { 
   list-style-type: none;
   overflow: hidden;
