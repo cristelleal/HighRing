@@ -111,7 +111,7 @@ function checkOrientation() {
  
   if(window.innerHeight < window.innerWidth){
     alert('Veuillez passer en mode portrait pour une meilleure expérience utilisateur de ce site 💻');
-  g}
+  }
 }
 
 window.addEventListener('resize', checkOrientation);
