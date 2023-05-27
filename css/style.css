@@ -398,7 +398,6 @@ svg {
   z-index: 3;
   align-items: center; 
   justify-content: space-between;   
-  padding: 10px;
   font-size: 1.1rem;
 }
 
@@ -422,7 +421,7 @@ svg {
   width: 0;
   height: 120vh;  
   position: absolute;
-  top: 75px;
+  top: 60px;
   right: -1.2rem;     
   background: var(--ui-color-background-primary);     
   transform: translateX(110%);
@@ -821,9 +820,6 @@ svg {
   ------------------------------------------------------------*/
 
   .ui-section-header--logo { max-width: 29%; }
-
-  .ui-text-intro { font-size: smaller; }
-  
 }
 
 /*--------------------------------------------------------------
