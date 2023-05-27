@@ -10,12 +10,16 @@ function toggleMenu() {
   const nav = document.querySelector('.ui-section-header');
 
   burger.addEventListener('click', (e) => {
+    e.preventDefault(); 
+    
     navbar.classList.toggle('show-nav');
 
     if (navbar.classList.contains('show-nav')) {
       nav.style.backgroundColor = '#fff';
+      document.body.style.overflow = 'hidden'; 
     } else {
       nav.style.backgroundColor = '#ffffff3e';
+      document.body.style.overflow = ''; 
     }
   });
 }
@@ -23,7 +27,6 @@ function toggleMenu() {
 toggleMenu();
 
 
-  
 // NAVBAR SCROLL TRANSFORMATION
   
 const nav = document.querySelector('.ui-section-header');
@@ -51,6 +54,7 @@ window.addEventListener('scroll', () => {
 // PROGRESS BAR
   
   window.addEventListener('scroll', () => {
+
     let height = document.documentElement.scrollHeight - window.innerHeight;
     let position = window.scrollY;
     let width = document.documentElement.clientWidth;
@@ -63,6 +67,7 @@ window.addEventListener('scroll', () => {
 // SLIDER @CONSTRUCTION PAGE
 
   if (document.querySelector('.ui-section-brands')) {
+
     const beforeBtn = document.querySelector('.before');
     const afterBtn = document.querySelector('.after');
     const slideContents = document.querySelectorAll('.slide-content');
