@@ -355,6 +355,16 @@ svg {
 
 .cta-links:hover { color: var(--ui-color-n-1300); }
 
+.arrow-up-btn {
+  max-height: 50px;
+  max-width: 50px;
+  position: fixed;
+  left: 1%;
+  bottom: 2.1%;
+  cursor: pointer;
+  z-index: 999;
+}
+
 /*--------------------------------------------------------------
  - SECTION
 --------------------------------------------------------------*/

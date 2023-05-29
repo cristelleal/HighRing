@@ -63,56 +63,78 @@ window.addEventListener('scroll', () => {
     document.getElementById('progress').style.width = progress + 'px';
   })
 
-// SLIDER @CONSTRUCTION PAGE
-
+  
+  // SLIDER @CONSTRUCTION PAGE
+  
   if (document.querySelector('.ui-section-brands')) {
     const beforeBtn = document.querySelector('.before');
     const afterBtn = document.querySelector('.after');
     const slideContents = document.querySelectorAll('.slide-content');
     let currentIndex = 0; 
-
-    function showSlide(index) {
     
+    function showSlide(index) {
+      
       slideContents.forEach(function(content) {
         content.style.display = 'none';
       });
-
+      
       slideContents[index].style.display = 'block';
     }
-
+    
     showSlide(currentIndex);
-
+    
     beforeBtn.addEventListener('click', function() {
       currentIndex--; 
-
+      
       if (currentIndex < 0) {
         currentIndex = slideContents.length - 1;
       }
-
-    showSlide(currentIndex); 
+      
+      showSlide(currentIndex); 
     });
-
+    
     afterBtn.addEventListener('click', function() {
       currentIndex++; 
       
       if (currentIndex >= slideContents.length) {
         currentIndex = 0;
       }
-
-    showSlide(currentIndex); 
+      
+      showSlide(currentIndex); 
     });
   }
-
+  
   if (window.location.pathname === "/consulting.html") {
     const slider = document.querySelector('.slider');
-      
+    
     slider.style.minHeight = '19rem';
   };
-
-// LANDSCAPE 
-
-
-
+  
+  // SCROLL TOP 
+  
+  const arrow = document.querySelector('.arrow-up-btn');
+  
+  arrow.addEventListener('click', () => {
+    window.scrollTo({
+      top: 0,
+      right: 0,
+      behavior: 'smooth',
+    })
+  });
+  
+  // LANDSCAPE 
+  
+  function checkOrientation() {
+    if (
+    window.matchMedia("(orientation: landscape)").matches &&
+    window.innerWidth <= 768 
+    ) {
+      alert("↶ Veuillez repasser en mode portrait pour une meilleure expérience sur ce site");
+    }
+  }
+  
+  window.addEventListener("resize", checkOrientation);
+  
 
 
 
