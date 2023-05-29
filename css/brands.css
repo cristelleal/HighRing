@@ -56,7 +56,7 @@ span { color: var(--ui-color-n-1100); }
     align-items: center;
     width: 100%;
     max-width: 58rem;
-    height: 30rem;
+    min-height: 30rem;
     margin: auto;
     background-color: var(--ui-color-background-secondary);
 }

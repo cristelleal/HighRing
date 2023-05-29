@@ -106,7 +106,7 @@ window.addEventListener('scroll', () => {
   if (window.location.pathname === "/consulting.html") {
     const slider = document.querySelector('.slider');
       
-    slider.style.height = '19rem';
+    slider.style.minHeight = '19rem';
   };
 
 // LANDSCAPE 
