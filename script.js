@@ -32,6 +32,7 @@ const nav = document.querySelector('.ui-section-header');
 let heightSection = nav.clientHeight;
 
 window.addEventListener('scroll', () => {
+
   if (window.scrollY > heightSection) {
     nav.classList.add('scroll');
   } else {
@@ -53,7 +54,6 @@ window.addEventListener('scroll', () => {
 // PROGRESS BAR
   
   window.addEventListener('scroll', () => {
-
     let height = document.documentElement.scrollHeight - window.innerHeight;
     let position = window.scrollY;
     let width = document.documentElement.clientWidth;
@@ -66,11 +66,9 @@ window.addEventListener('scroll', () => {
 // SLIDER @CONSTRUCTION PAGE
 
   if (document.querySelector('.ui-section-brands')) {
-
     const beforeBtn = document.querySelector('.before');
     const afterBtn = document.querySelector('.after');
     const slideContents = document.querySelectorAll('.slide-content');
-
     let currentIndex = 0; 
 
     function showSlide(index) {
@@ -103,18 +101,33 @@ window.addEventListener('scroll', () => {
 
     showSlide(currentIndex); 
     });
-}
+  }
+
+  if (window.location.pathname === "/consulting.html") {
+    const slider = document.querySelector('.slider');
+      
+    slider.style.height = '19rem';
+  };
 
 // LANDSCAPE 
 
 function checkOrientation() {
  
   if(window.innerHeight < window.innerWidth){
-    alert('Veuillez passer en mode portrait pour une meilleure expérience utilisateur de ce site 💻');
+    alert('↶ Veuillez repasser en mode portrait pour une meilleure expérience sur ce site');
   }
 }
 
 window.addEventListener('resize', checkOrientation);
+
+
+
+
+
+
+
+
+
 
 }
 
