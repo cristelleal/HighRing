@@ -115,7 +115,7 @@ window.addEventListener('scroll', () => {
   const arrow = document.querySelector('.arrow-up-btn');
   
   arrow.addEventListener('click', () => {
-    window.scrollTo({
+  window.scrollTo({
       top: 0,
       right: 0,
       behavior: 'smooth',
@@ -134,14 +134,6 @@ window.addEventListener('scroll', () => {
   }
   
   window.addEventListener("resize", checkOrientation);
-  
-
-
-
-
-
-
-
 
 
 }
