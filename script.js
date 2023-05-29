@@ -111,14 +111,7 @@ window.addEventListener('scroll', () => {
 
 // LANDSCAPE 
 
-function checkOrientation() {
- 
-  if(window.innerHeight < window.innerWidth){
-    alert('↶ Veuillez repasser en mode portrait pour une meilleure expérience sur ce site');
-  }
-}
 
-window.addEventListener('resize', checkOrientation);
 
 
 
