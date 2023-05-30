@@ -580,19 +580,48 @@ svg {
   gap: var(--ui-gap-header);
   padding: 7.375rem var(--ui-layout-container) 5rem;
   display: none; 
-  font-size: 1.05rem;
-  font-family: var(--ui-typography-typeface);
   font-weight: normal;
 } 
 
-.list-items { display: flex; }
+.list-items { 
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.items:hover { color: var(--ui-color-n-1300); }
+
+.active {
+  background-color: #f8f9fa;
+  border: 1px solid #f8f9fa;
+  border-radius: 4px;
+  color: var(--ui-color-brand);
+  cursor: pointer;
+  padding: .85rem;
+  text-align: center;
+  white-space: pre;
+}
+
+.items :nth-child(1):hover { color: var(--ui-color-n-1300); } 
+
+.active:hover {
+  border-color: #dadce0;
+  box-shadow: rgba(0, 0, 0, .1) 0 1px 1px;
+}
+
+.active:focus {
+  border-color: #4285f4;
+}
 
 .items {
-  margin: 1rem;
+  margin: 0 1rem 0 1rem;
   text-decoration: none;
   list-style-type: none;
   cursor: pointer;
   position: relative; 
+  padding: 1rem 0 1rem 0;
+  text-transform: uppercase;
+  font-size: small;
 }
 
 .sublist {
@@ -1123,7 +1152,7 @@ svg {
   |
   ------------------------------------------------------------*/
 
-  .ui-section-header { padding-top: 0; }
+  .ui-section-header { padding-top: .2rem; }
 
   .ui-section-header--logo { max-width: 21.5% ;}
 
