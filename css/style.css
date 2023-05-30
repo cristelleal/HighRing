@@ -484,8 +484,9 @@ svg {
   padding-top: .15rem;
   margin: 5px 0 0 10px;
   font-weight: 500;
-  text-decoration: underline;
 }
+
+.hamburger-items-sublist a:hover { color: var(--ui-color-n-1300); }
   
 .burger {
   display: block;
@@ -1152,7 +1153,7 @@ svg {
   |
   ------------------------------------------------------------*/
 
-  .ui-section-header { padding-top: .2rem; }
+  .ui-section-header { padding-top: 0; }
 
   .ui-section-header--logo { max-width: 21.5% ;}
 
