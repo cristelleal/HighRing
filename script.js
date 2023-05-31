@@ -110,19 +110,30 @@ window.addEventListener('scroll', () => {
     slider.style.minHeight = '19rem';
   };
   
-  // SCROLL TOP 
-  
+// SCROLL TOP 
+
+if (window.location.href.includes('index.html')) {
   const arrow = document.querySelector('.arrow-up-btn');
+
+  window.addEventListener('scroll', () => {
+    if (window.scrollY > 50) {
+      arrow.style.display = 'block'; 
+      arrow.classList.add('show'); 
+    } else {
+      arrow.classList.remove('show'); 
+    }
+  });
   
   arrow.addEventListener('click', () => {
-  window.scrollTo({
+    window.scrollTo({
       top: 0,
       right: 0,
       behavior: 'smooth',
-    })
+    });
   });
+}
   
-  // LANDSCAPE 
+// LANDSCAPE 
   
   function checkOrientation() {
     if (
