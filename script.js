@@ -116,7 +116,7 @@ if (window.location.href.includes('index.html')) {
   const arrow = document.querySelector('.arrow-up-btn');
 
   window.addEventListener('scroll', () => {
-    if (window.scrollY > 50) {
+    if (window.innerWidth >= 765 && window.scrollY > 0) {
       arrow.style.display = 'block'; 
       arrow.classList.add('show'); 
     } else {
