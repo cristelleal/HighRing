@@ -132,20 +132,5 @@ if (window.location.href.includes('index.html')) {
     });
   });
 }
-  
-// LANDSCAPE 
-  
-  function checkOrientation() {
-    if (
-    window.matchMedia("(orientation: landscape)").matches &&
-    window.innerWidth <= 768 
-    ) {
-      alert("↶ Veuillez repasser en mode portrait pour une meilleure expérience sur ce site");
-    }
-  }
-  
-  window.addEventListener("resize", checkOrientation);
-
-
 }
 
