@@ -1,7 +1,13 @@
 ﻿# HighRing 
 
-Official website of HighRing - recruitment agency (Paris, Bordeaux) 🏢
+## Official website of HighRing - recruitment agency 🏢
 
-### [Website currently under development ... 🏗️]
+#### 🌐 https://www.highring.fr 
 
-### Available soon
+### Stack : HTML,CSS,JS 
+
+
+
+
+
+
