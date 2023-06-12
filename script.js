@@ -8,6 +8,7 @@ function toggleMenu() {
   const navbar = document.querySelector('.navbar');
   const burger = document.querySelector('.burger');
   const nav = document.querySelector('.ui-section-header');
+  const navbarLinks = document.querySelector('.navbar__links');
 
   burger.addEventListener('click', (e) => {
     e.preventDefault(); 
@@ -22,7 +23,19 @@ function toggleMenu() {
       document.body.style.overflow = ''; 
     }
   });
+
+  // Ajouter une gestion de défilement du menu
+  window.addEventListener('resize', () => {
+    if (window.innerHeight < navbarLinks.scrollHeight) {
+      navbarLinks.style.overflowY = 'scroll';
+    } else {
+      navbarLinks.style.overflowY = 'visible';
+    }
+  });
 }
+
+toggleMenu();
+
 
 toggleMenu();
 
