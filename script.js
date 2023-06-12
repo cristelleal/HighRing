@@ -26,7 +26,7 @@ function toggleMenu() {
 
   // Ajouter une gestion de défilement du menu
   window.addEventListener('resize', () => {
-    if (window.innerHeight < navbarLinks.scrollHeight) {
+    if (window.innerHeight < navbarLinks) {
       navbarLinks.style.overflowY = 'scroll';
     } else {
       navbarLinks.style.overflowY = 'visible';
