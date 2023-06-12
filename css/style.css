@@ -559,6 +559,7 @@ svg {
   -webkit-transform: rotate(-45deg);
 }
 
+
 /* Toggle / Animations */
 
 .show-nav .first {      
@@ -896,14 +897,14 @@ svg {
 
     /* FONT SIZE */
 
-    --ui-typography-h1: 2.1875rem;
+    /* --ui-typography-h1: 2.1875rem;
     --ui-typography-h2: 1.75rem;
     --ui-typography-p : 1.05rem;
-    --ui-typography-s : .875rem;
+    --ui-typography-s : .875rem; */
 
     /* MARGIN */
 
-    --ui-typography-margin-body: 1.25rem;
+    /* --ui-typography-margin-body: 1.25rem; */
 
     /*----------------------------------------------------------
     |
@@ -981,6 +982,7 @@ svg {
   |  - HEADER
   |
   ------------------------------------------------------------*/
+
   .navbar__links { right: -4.25rem; }
 
   .ui-section-header--logo { max-width: 31%; }

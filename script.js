@@ -16,7 +16,7 @@ function toggleMenu() {
 
     if (navbar.classList.contains('show-nav')) {
       nav.style.backgroundColor = '#fff';
-      document.body.style.overflow = 'hidden'; 
+      document.body.style.overflow = 'auto'; 
     } else {
       nav.style.backgroundColor = '#ffffff3e';
       document.body.style.overflow = ''; 
