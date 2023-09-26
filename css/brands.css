@@ -1,22 +1,22 @@
 .root {
 
     /* COLOR PALETTE */
-    --ui-color-n-000: #fff;
-    --ui-color-n-050: #f5f5f5;
-    --ui-color-n-100: #ebebeb;
-    --ui-color-n-300: #aeaeae;
-    --ui-color-n-500: #1e2146;
-    --ui-color-n-700: #1f2348;
-    --ui-color-n-900: #000046;
-    --ui-color-n-1050: #e0bf54b9;
-    --ui-color-n-1100: #E0C054;
-    --ui-color-n-1300: #d2a61d;
+    --color-n-000: #fff;
+    --color-n-050: #f5f5f5;
+    --color-n-100: #ebebeb;
+    --color-n-300: #aeaeae;
+    --color-n-500: #1e2146;
+    --color-n-700: #1f2348;
+    --color-n-900: #000046;
+    --color-n-1050: #e0bf54b9;
+    --color-n-1100: #E0C054;
+    --color-n-1300: #d2a61d;
     
     /* BACKGROUND COLOR */
     
-    --ui-color-background-primary  : var(--ui-color-n-000);
-    --ui-color-background-secondary: var(--ui-color-n-050);
-    --ui-color-background-tertiary : var(--ui-color-n-100);
+    --color-background-primary  : var(--color-n-000);
+    --color-background-secondary: var(--color-n-050);
+    --color-background-tertiary : var(--color-n-100);
     
 } 
 
@@ -26,29 +26,29 @@
 |
 --------------------------------------------------------------*/
 
-.ui-section-brands {
+.section-brands {
     padding-top: 5rem;
     padding-bottom: 5rem;
 }
 
-.ui-section-brands--list { list-style-type: none; }
+.section-brands--list { list-style-type: none; }
 
-span { color: var(--ui-color-n-1100); }
+span { color: var(--color-n-1100); }
 
-.ui-section-brands--title { padding-top: 5rem; }
+.section-brands--title { padding-top: 5rem; }
 
-.ui-section-close-brands {
+.section-close-brands {
     padding-top: 5rem;
     padding-bottom: 5rem;
-    background-color: var(--ui-color-background-primary);
+    background-color: var(--color-background-primary);
     text-align: center;
 }
 
-.ui-section-close-brands h2 { text-align: center; }
+.section-close-brands h2 { text-align: center; }
 
 /* SLIDER */
 
-.ui-section-brands h2 { text-align: center; }
+.section-brands h2 { text-align: center; }
 
 .slider {
     position: relative;
@@ -58,7 +58,7 @@ span { color: var(--ui-color-n-1100); }
     max-width: 58rem;
     min-height: 30rem;
     margin: auto;
-    background-color: var(--ui-color-background-secondary);
+    background-color: var(--color-background-secondary);
 }
 
 .before { left: 0; }
@@ -70,7 +70,7 @@ span { color: var(--ui-color-n-1100); }
     position: absolute;
     top: auto;
     background: rgba(0, 0, 0, 0.193);
-    color: var(--ui-color-background-secondary);
+    color: var(--color-background-secondary);
     font-weight: bold;
     cursor: pointer;
     padding: 0.3rem;
@@ -80,23 +80,23 @@ span { color: var(--ui-color-n-1100); }
 
 /* JOBS */
 
-.ui-section-brands--content {
+.section-brands--content {
     position: relative;
     display: flex;
     align-items: center;
     width: 100%;
     max-width: 58rem;
     margin: auto;
-    background-color: var(--ui-color-background-secondary);
+    background-color: var(--color-background-secondary);
 }
 
 .content { padding: 3rem; }
 
 /* TESTIMONIAL */
 
-.ui-section-brands--testimonial { padding-top: 5rem; }
+.section-brands--testimonial { padding-top: 5rem; }
 
-.ui-section-brands--testimonial span {
+.section-brands--testimonial span {
     font-weight: bold;
     font-size: 1.75rem;
     padding-left: 0.5rem;
@@ -104,7 +104,7 @@ span { color: var(--ui-color-n-1100); }
     line-height: 1.5rem ;
 }
 
-.ui-testimonial-blob {
+.testimonial-blob {
     border-radius: 86% 14% 22% 78% / 50% 47% 53% 50%; 
     width: 16rem;
     height: 16rem;  
@@ -116,7 +116,7 @@ span { color: var(--ui-color-n-1100); }
 |
 --------------------------------------------------------------*/
 
-.ui-section-brand { text-align: center; }
+.section-brand { text-align: center; }
 
 .illustration { width: 30%; }
 
@@ -124,6 +124,21 @@ span { color: var(--ui-color-n-1100); }
     display: flex;
     justify-content: center;
     align-items: center;
+}
+
+#signOutButton {
+    cursor: pointer;
+    color: var(--color-n-1500);
+    font-family: "Montserrat", sans-serif;
+    background: none;
+    border: none;
+    text-decoration: underline;
+}
+
+#signOutButton:hover {
+    border: none;
+    background-color: none;
+    box-shadow: none;
 }
 
 /*--------------------------------------------------------------
@@ -144,6 +159,6 @@ span { color: var(--ui-color-n-1100); }
     |
     ------------------------------------------------------------*/
 
-    .calendly-btn { display: inline; }
+    .calendly-btn, #signOutButton { display: inline; }
 
 }

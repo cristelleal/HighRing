@@ -1,22 +1,22 @@
 .root {
 
 /* COLOR PALETTE */
---ui-color-n-000: #fff;
---ui-color-n-050: #f5f5f5;
---ui-color-n-100: #ebebeb;
---ui-color-n-300: #aeaeae;
---ui-color-n-500: #1e2146;
---ui-color-n-700: #1f2348;
---ui-color-n-900: #000046;
---ui-color-n-1050: #e0bf54b9;
---ui-color-n-1100: #E0C054;
---ui-color-n-1300: #d2a61d;
+--color-n-000: #fff;
+--color-n-050: #f5f5f5;
+--color-n-100: #ebebeb;
+--color-n-300: #aeaeae;
+--color-n-500: #1e2146;
+--color-n-700: #1f2348;
+--color-n-900: #000046;
+--color-n-1050: #e0bf54b9;
+--color-n-1100: #E0C054;
+--color-n-1300: #d2a61d;
 
 /* BACKGROUND COLOR */
 
---ui-color-background-primary  : var(--ui-color-n-000);
---ui-color-background-secondary: var(--ui-color-n-050);
---ui-color-background-tertiary : var(--ui-color-n-100);
+--color-background-primary  : var(--color-n-000);
+--color-background-secondary: var(--color-n-050);
+--color-background-tertiary : var(--color-n-100);
 
 } 
 
@@ -26,17 +26,17 @@
 |
 --------------------------------------------------------------*/
   
-.ui-section-storytelling { background-color: var(--ui-color-background-secondary); }
+.section-storytelling { background-color: var(--color-background-secondary); }
 
-.ui-section-storytelling--title { padding-top: 5rem; }
+.section-storytelling--title { padding-top: 5rem; }
 
-.ui-section-storytelling_layout {
+.section-storytelling_layout {
     padding-bottom: 5rem;
     padding-top: 5rem;
     text-align: center;
 }
   
-.ui-section-storytelling--icon {
+.section-storytelling--icon {
     width: 3rem;
     height: 3rem;
     margin-top: 1rem;

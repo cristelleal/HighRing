@@ -6,7 +6,7 @@
 
 #### Stack : HTML, CSS, JS
 #### Website build from scratch, with AOS library
-#### Connected with Hubspot CRM 
+#### Linked with Hubspot CRM 
 
 
 

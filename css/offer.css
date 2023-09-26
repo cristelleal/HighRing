@@ -1,22 +1,22 @@
 .root {
 
     /* COLOR PALETTE */
-    --ui-color-n-000: #fff;
-    --ui-color-n-050: #f5f5f5;
-    --ui-color-n-100: #ebebeb;
-    --ui-color-n-300: #aeaeae;
-    --ui-color-n-500: #1e2146;
-    --ui-color-n-700: #1f2348;
-    --ui-color-n-900: #000046;
-    --ui-color-n-1050: #e0bf54b9;
-    --ui-color-n-1100: #E0C054;
-    --ui-color-n-1300: #d2a61d;
+    --color-n-000: #fff;
+    --color-n-050: #f5f5f5;
+    --color-n-100: #ebebeb;
+    --color-n-300: #aeaeae;
+    --color-n-500: #1e2146;
+    --color-n-700: #1f2348;
+    --color-n-900: #000046;
+    --color-n-1050: #e0bf54b9;
+    --color-n-1100: #E0C054;
+    --color-n-1300: #d2a61d;
     
     /* BACKGROUND COLOR */
     
-    --ui-color-background-primary  : var(--ui-color-n-000);
-    --ui-color-background-secondary: var(--ui-color-n-050);
-    --ui-color-background-tertiary : var(--ui-color-n-100);
+    --color-background-primary  : var(--color-n-000);
+    --color-background-secondary: var(--color-n-050);
+    --color-background-tertiary : var(--color-n-100);
 } 
 
 /*--------------------------------------------------------------
@@ -25,23 +25,23 @@
 |
 --------------------------------------------------------------*/
 
-span { color: var(--ui-color-n-1100); }
+span { color: var(--color-n-1100); }
 
-.ui-section-offer--list {
+.section-offer--list {
     list-style-type: none;
     text-align: initial;
 }
 
-.ui-section-offer--title { padding-top: 5rem; }
+.section-offer--title { padding-top: 5rem; }
 
-.ui-section-offer_layout {
+.section-offer_layout {
     padding-bottom: 5rem;
     padding-top: 5rem;
-    padding-left: var(--ui-layout-container);
-    padding-right: var(--ui-layout-container);
+    padding-left: var(--layout-container);
+    padding-right: var(--layout-container);
 }
   
-.ui-section-offer_layout h3 {
+.section-offer_layout h3 {
     background-image: url(https://res.cloudinary.com/uisual/image/upload/assets/icons/check.svg);
     background-repeat: no-repeat;
     background-size: 1.75rem;
@@ -49,13 +49,13 @@ span { color: var(--ui-color-n-1100); }
     background-position: 0 0;
 }
 
-.ui-section-offer { background-color: var(--ui-color-background-secondary); }
+.section-offer { background-color: var(--color-background-secondary); }
 
-.ui-section-offer-faq { 
+.section-offer-faq { 
     text-align: center; 
     padding-top: 5rem;
     padding-bottom: 5rem; 
-    background-color: var(--ui-color-background-secondary); }
+    background-color: var(--color-background-secondary); }
 
 .prime {
     margin-top: 3.5rem;
@@ -67,18 +67,18 @@ span { color: var(--ui-color-n-1100); }
 }
 
 .prime i {
-    color: var(--ui-color-n-1100);
+    color: var(--color-n-1100);
     font-size: 25px;
 }
 
 /* FORM */
 
-.ui-section-offer-form {
+.section-offer-form {
     padding-top: 5rem;
     padding-bottom: 5rem;
 }
 
-.ui-section-offer-form h2 {
+.section-offer-form h2 {
     padding-top: 1rem;
     padding-bottom: 1.5rem;
     text-align: center;

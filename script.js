@@ -7,7 +7,7 @@ window.onload = () => {
 function toggleMenu() {
   const navbar = document.querySelector('.navbar');
   const burger = document.querySelector('.burger');
-  const nav = document.querySelector('.ui-section-header');
+  const nav = document.querySelector('.section-header');
 
   burger.addEventListener('click', (e) => {
     e.preventDefault(); 
@@ -28,7 +28,7 @@ toggleMenu();
 
 // NAVBAR SCROLL TRANSFORMATION
   
-const nav = document.querySelector('.ui-section-header');
+const nav = document.querySelector('.section-header');
 let heightSection = nav.clientHeight;
 
 window.addEventListener('scroll', () => {
@@ -66,7 +66,7 @@ window.addEventListener('scroll', () => {
   
   // SLIDER @CONSTRUCTION PAGE
   
-  if (document.querySelector('.ui-section-brands')) {
+  if (document.querySelector('.section-brands')) {
     const beforeBtn = document.querySelector('.before');
     const afterBtn = document.querySelector('.after');
     const slideContents = document.querySelectorAll('.slide-content');
@@ -134,3 +134,16 @@ if (window.location.href.includes('index.html')) {
 }
 }
 
+// AUTH
+
+const signUpButton = document.getElementById('signUp');
+const signInButton = document.getElementById('signIn');
+const container = document.getElementById('container');
+
+signUpButton.addEventListener('click', () => {
+	container.classList.add("right-panel-active");
+});
+
+signInButton.addEventListener('click', () => {
+	container.classList.remove("right-panel-active");
+});

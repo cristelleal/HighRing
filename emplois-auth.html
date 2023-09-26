@@ -1,0 +1,279 @@
+<!DOCTYPE html>
+<html lang="fr">
+  <head>
+    <!-- META -->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="Découvrez les meilleures offres d'emplois cadres dans les domaines de la construction, des sales et du consulting avec HighRing. Optimisez votre carrière avec notre expertise en recrutement. Ingénieur d'affaires ? Nous avons des opportunités à vous proposer !">
+    <meta name="author" content="C.A.">
+    <meta name="robots" content="index, follow">
+    <!-- FONT -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="dns-prefetch" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+    <!-- STYLE -->
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/brands.css">
+    <link rel="stylesheet" href="css/auth.css">
+    <!-- TITLE -->
+    <title>HighRing - Société de recrutement - Paris/Bordeaux</title>
+    <!-- FAVICON -->
+    <link rel="shortcut icon" href="img/Favicon.png" type="image/x-icon">
+    <!-- CDN -->
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css">
+    <link rel="stylesheet" href="https://cdn-uicons.flaticon.com/uicons-brands/css/uicons-brands.css">
+  </head>
+  <body>
+<!-- PROGRESS BAR -->
+<div id="progress"></div>
+    <header class="section-header">
+      <div class="layout-container">
+        <div class="section-header__layout layout-flex">
+          <!-- LOGO -->
+          <a href="index.html" class="section-header--logo" aria-label="lien vers la page d'accueil">
+            <img src="img/Logo-HighRing.png" alt="Logo HighRing Bleu et doré représentant un H et un R entourés d'un anneau">
+          </a>
+          <!-- HAMBURGER MENU -->
+          <nav class="navbar">
+            <ul class="navbar__links">
+              <li class="navbar__link first"><a href="#">Candidats</a></li>
+              <ul class="hamburger-sublist">
+                <li class="hamburger-items-sublist"><a href="emplois.html">Offres d'emplois</a></li>
+                <li class="hamburger-items-sublist"><a href="candidats.html">Proposer ma candidature</a></li>
+            </ul>
+              <li class="navbar__link second"><a href="#section2">Entreprises</a></li>
+              <ul class="hamburger-sublist">
+                <li class="hamburger-items-sublist"><a href="profils.html">Profils disponibles</a></li>
+                <li class="hamburger-items-sublist"><a href="entreprises.html">Travailler avec HighRing</a></li>
+              </ul>
+              <li class="navbar__link third"><a href="#">Nos marques</a></li>
+              <ul class="hamburger-sublist">
+                <li class="hamburger-items-sublist"><a href="construction.html">Construction</a></li>
+                <li class="hamburger-items-sublist"><a href="sales.html">Sales</a></li>
+                <li class="hamburger-items-sublist"><a href="consulting.html">Consulting</a></li>
+              </ul>
+              <li class="navbar__link four"><a href="notre-histoire.html">Notre histoire</a></li>
+              <li class="navbar__link fifth"><a href="contact.html">Contact</a></li>
+            </ul>   
+            <button class="burger" aria-label="boutton qui déroule le menu de navigation">
+              <span class="bar"></span>  
+            </button>   
+          </nav>
+          <!-- MENU DESKTOP -->
+          <nav class="section-header--nav layout-flex">
+            <ul class="list-items">
+              <li class="items">Candidats
+                  <ul class="sublist">
+                      <li class="items-sublist"><a href="emplois.html">Offres d'emplois</a></li>
+                      <li class="items-sublist"><a href="candidats.html">Proposer ma candidature</a></li>
+                  </ul>
+              </li>
+              <li class="items">Entreprises
+                  <ul class="sublist">
+                    <li class="items-sublist"><a href="profils.html">Profils disponibles</a></li>
+                    <li class="items-sublist"><a href="entreprises.html">Travailler avec HighRing</a></li>
+                  </ul>
+            </li>
+              <li class="items">Nos marques <span>³</span>
+                  <ul class="sublist">
+                    <li class="items-sublist"><a href="construction.html">Construction</a></li>
+                    <li class="items-sublist"><a href="sales.html">Sales</a></li>
+                    <li class="items-sublist"><a href="consulting.html">Consulting</a></li>
+                  </ul>
+            </li>
+              <li class="items"><a href="notre-histoire.html">Notre histoire</a>
+              <li class="items"><a href="contact.html"><p class="active">Contact</p></a>
+          </ul>
+          </nav>
+        </div>
+      </div>
+    </header>
+    <section class="layout-container">
+        <div class="wrapper-container" data-aos="fade-down">
+            <div class="container" id="container">
+                <div class="form-container sign-up-container">
+                    <form action="#">
+                        <h1>Créer un compte</h1>
+                        <input type="text" placeholder="Pseudo" required id="userName"/>
+                        <input type="email" placeholder="Email" required id="userEmail"/>
+                        <input type="password" placeholder="Mot de passe" required id="userPassword" />
+                        <button id="signUpButton">Créer un compte</button>
+                    </form>
+                </div>
+                <div class="form-container sign-in-container">
+                    <form action="#">
+                        <h1>Se connecter</h1>
+                        <input type="email" placeholder="Email" required />
+                        <input type="password" placeholder="Mot de passe" required />
+                        <a href="#">Mot de passe oublié ?</a>
+                        <button id="signInButton">Se connecter</button>
+                    </form>
+                </div>
+                <div class="overlay-container">
+                    <div class="overlay">
+                        <div class="overlay-panel overlay-left">
+                            <h1>Heureux de vous revoir</h1>
+                            <p>Connectez-vous pour consulter les offres</p>
+                            <button class="ghost" id="signIn">Se connecter</button>
+                        </div>
+                        <div class="overlay-panel overlay-right">
+                            <h1>Bienvenue</h1>
+                            <p>Afin de profitez de nos offres, enregistrez-vous</p>
+                            <button class="ghost" id="signUp">Créer un compte</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="section-hero" id="emplois">
+        <div class="layout-container">
+          <div class="section-hero__layout layout-grid layout-grid-2">
+            <!-- IMAGE -->
+            <img src="img/search-recrutement-emplois.svg" loading="eager" alt="loupe de recherche sur un écran mobile" class="illustration">
+            <!-- COPYWRITING -->
+            <div data-aos="fade-down">
+              <h1>Offres d'emplois</h1>
+              <p class="text-intro">Ici, vous retrouverez bientôt la liste des différentes offres d'emplois disponibles.</p>
+              <p class="text-intro"><small>Pour gagner du temps, vous pouvez indiquer vos créneaux de disponibilité en vue d'une rencontre avec l'un de nos partenaires</small>  <span>↴</span></p>
+              <!-- CALENDLY -->
+              <div class="calendly-btn">
+                <link href="https://assets.calendly.com/assets/external/widget.css" rel="stylesheet">
+                <script src="https://assets.calendly.com/assets/external/widget.js" type="text/javascript" async></script>
+                <a href="" onclick="Calendly.initPopupWidget({url: 'https://calendly.com/t-langronier?hide_landing_page_details=1&hide_gdpr_banner=1'});return false;" class="component-button component-button-normal component-button-primary" data-aos="fade-right">Planifier un échange</a>
+              </div>
+            </div>
+            <button id="signOutButton">Se déconnecter</button>
+          </div> 
+    </section>
+    <footer class="section-footer">
+        <div class="layout-container">
+          <div class="section-footer__layout layout-flex">
+            <!-- COPYRIGHT -->
+            <p class="section-footer--copyright text-note">
+              <small>&copy; C.A. pour HighRing - 2023</small>          
+              <img src="img/logo-HighRing-simple.png" alt="Logo HighRing" loading="lazy">
+            </p>
+            <p class="section-footer--copyright text-note">
+              <small>
+                <b>Support</b>
+                  <br>
+                  <a href="mentions-legales.html" aria-label="lien vers la page des mentions légales">Mentions légales</a>
+                  <br>
+                  <a href="politique-de-confidentialite.html" aria-label="lien vers la page de politique de confidentialité">Politique de confidentialité</a>
+              </small>
+            </p>
+            <p class="section-footer--copyright text-note">
+              <small>
+                <b>Informations</b>
+                  <br>
+                  <a href="faq.html" aria-label="lien vers la foire à questions">FAQ</a> 
+                  <br>
+                  <a href="contact.html" aria-label="lien vers la page contact">Contact</a> 
+              </small>
+            </p>
+            <!-- MENU -->
+            <div class="section-footer--icon">
+              <a href="https://www.instagram.com/highringfrance/" rel="noopener noreferrer nofollow" target="_blank" aria-label="lien vers la page Instagram d'HighRing"><i class="fi fi-brands-instagram"></i></a>
+              <a href="https://www.facebook.com/profile.php?id=100088948220802" rel="noopener noreferrer nofollow" target="_blank" aria-label="lien vers la page Facebook d'HighRing"><i class="fi fi-brands-facebook"></i></a>
+              <a href="https://www.linkedin.com/company/highring-france/" rel="noopener noreferrer nofollow" target="_blank" aria-label="lien vers la page Linkedin d'HighRing"><i class="fi fi-brands-linkedin"></i></a>
+            </div>
+          </div>
+        </div>
+      </footer>
+      <script src="script.js"></script>
+      <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+      <script>
+        AOS.init();
+      </script>
+      <script type="module">
+        import { initializeApp } from "https://www.gstatic.com/firebasejs/10.1.0/firebase-app.js";
+        import {
+            getAuth,
+            createUserWithEmailAndPassword,
+            signInWithEmailAndPassword,
+            onAuthStateChanged,
+            signOut
+         } from "https://www.gstatic.com/firebasejs/10.1.0/firebase-auth.js";
+        const firebaseConfig = {
+          apiKey: "AIzaSyDg9cmqqFsYHIZMtQB8e-t-Cqh_9oMRVD0",
+          authDomain: "highring-e6b1c.firebaseapp.com",
+          projectId: "highring-e6b1c",
+          storageBucket: "highring-e6b1c.appspot.com",
+          messagingSenderId: "152328786223",
+          appId: "1:152328786223:web:3d91b684c98eae161311da"
+        };
+        const app = initializeApp(firebaseConfig);
+        const auth = getAuth(app);
+
+        const userEmail = document.querySelector("#userEmail");
+        const userPassword = document.querySelector("#userPassword");
+        const userName = document.querySelector("#userName");
+        const authForm = document.querySelector("#container");
+        const secretContent = document.querySelector('#emplois');
+        const signInButton = document.querySelector("#signInButton");
+        const signUpButton = document.querySelector("#signUpButton");
+        const signOutButton = document.querySelector("#signOutButton");
+
+        secretContent.style.display = 'none';
+
+        const userSignUp = async() => {
+            const signUpEmail = userEmail.value;
+            const signUpPassword = userPassword.value;
+            createUserWithEmailAndPassword(auth, signUpEmail, signUpPassword)
+            .then((userCredential) => {
+                const user = userCredential.user;
+                console.log(user);
+                alert("Votre compte a bien été créé !");
+            })
+            .catch((error) => {
+                const errorCode = error.code;
+                const errorMessage = error.message;
+                console.log(errorCode + errorMessage)
+            })
+        }
+
+        const userSignIn = async() => {
+            const signInEmail = userEmail.value;
+            const signInPassword = userPassword.value;
+            signInWithEmailAndPassword(auth, signInEmail, signInPassword)
+            .then((userCredential) => {
+                const user = userCredential.user;
+                alert("Vous êtes connecté !");
+            })
+            .catch((error) => {
+                const errorCode = error.code;
+                const errorMessage = error.message;
+                console.log(errorCode + errorMessage)
+            })
+        }
+
+        const checkAuthState = async() => {
+            onAuthStateChanged(auth, user => {
+                if(user) {
+                    authForm.style.display = 'none';
+                    secretContent.style.display = 'block';
+                }
+                else {
+                    authForm.style.display = 'block';
+                    secretContent.style.display = 'none';
+                }
+            })
+        }
+
+        const userSignOut = async() => {
+            await signOut(auth);
+        }
+
+        checkAuthState();
+
+        signUpButton.addEventListener('click', userSignUp);
+        signInButton.addEventListener('click', userSignIn);
+        signOutButton.addEventListener('click', userSignOut);
+
+      </script>
+      <!-- Hubspot analytics -->
+      <script id="hs-script-loader" async defer src="//js-eu1.hs-scripts.com/26274332.js"></script>
+    </body>
+  </html>
