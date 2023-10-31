@@ -1,13 +1,11 @@
-// DOM LOADING
-
 window.onload = () => {
   
-// MENU HAMBURGER 
-  
+// Hamburger menu
+
 function toggleMenu() {
   const navbar = document.querySelector('.navbar');
   const burger = document.querySelector('.burger');
-  const nav = document.querySelector('.section-header');
+  const navSection = document.querySelector('.section-header');
 
   burger.addEventListener('click', (e) => {
     e.preventDefault(); 
@@ -15,10 +13,10 @@ function toggleMenu() {
     navbar.classList.toggle('show-nav');
 
     if (navbar.classList.contains('show-nav')) {
-      nav.style.backgroundColor = '#fff';
+      navSection.style.backgroundColor = '#fff';
       document.body.style.overflow = 'hidden'; 
     } else {
-      nav.style.backgroundColor = '#ffffff3e';
+      navSection.style.backgroundColor = '#ffffff3e';
       document.body.style.overflow = ''; 
     }
   });
@@ -26,51 +24,49 @@ function toggleMenu() {
 
 toggleMenu();
 
-// NAVBAR SCROLL TRANSFORMATION
+// Navbar section appearance
   
-const nav = document.querySelector('.section-header');
-let heightSection = nav.clientHeight;
+const navSection = document.querySelector('.section-header');
+let heightSection = navSection.clientHeight;
 
 window.addEventListener('scroll', () => {
 
   if (window.scrollY > heightSection) {
-    nav.classList.add('scroll');
+    navSection.classList.add('scroll');
   } else {
-    nav.classList.remove('scroll');
+    navSection.classList.remove('scroll');
   }
 
   if (window.location.href.includes('contact.html')) {
 
     if (window.scrollY < heightSection) {
-      nav.style.backgroundColor = '#f5f5f5';
-      nav.classList.remove('scroll');
+      navSection.style.backgroundColor = '#f5f5f5';
+      navSection.classList.remove('scroll');
     } else {
-      nav.classList.add('scroll');
-      nav.style.backgroundColor = 'transparent';
+      navSection.classList.add('scroll');
+      navSection.style.backgroundColor = 'transparent';
     } 
   }
 });
+    
+window.addEventListener('scroll', () => {
+  let height = document.documentElement.scrollHeight - window.innerHeight;
+  let position = window.scrollY;
+  let width = document.documentElement.clientWidth;
   
-// PROGRESS BAR
+  let progressBar = position / height * width;
   
-  window.addEventListener('scroll', () => {
-    let height = document.documentElement.scrollHeight - window.innerHeight;
-    let position = window.scrollY;
-    let width = document.documentElement.clientWidth;
-  
-    let progress = position / height * width;
-  
-    document.getElementById('progress').style.width = progress + 'px';
-  })
+  document.getElementById('progress').style.width = progressBar + 'px';
+});
 
   
-  // SLIDER @CONSTRUCTION PAGE
+// Slider at construction page
   
-  if (document.querySelector('.section-brands')) {
-    const beforeBtn = document.querySelector('.before');
-    const afterBtn = document.querySelector('.after');
-    const slideContents = document.querySelectorAll('.slide-content');
-    let currentIndex = 0; 
+if (document.querySelector('.section-brands')) {
+  const beforeBtn = document.querySelector('.before');
+  const afterBtn = document.querySelector('.after');
+  const slideContents = document.querySelectorAll('.slide-content');
+  let currentIndex = 0; 
     
     function showSlide(index) {
       
@@ -110,7 +106,7 @@ window.addEventListener('scroll', () => {
     slider.style.minHeight = '19rem';
   };
   
-// SCROLL TOP 
+// Scroll top button homepage
 
 if (window.location.href.includes('index.html')) {
   const arrow = document.querySelector('.arrow-up-btn');
@@ -134,7 +130,7 @@ if (window.location.href.includes('index.html')) {
 }
 }
 
-// AUTH
+// Authentification
 
 const signUpButton = document.getElementById('signUp');
 const signInButton = document.getElementById('signIn');
